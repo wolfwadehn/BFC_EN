@@ -1,0 +1,605 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Assisting functions</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>BFC Operator’s Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+  <ul>
+    <li><button class="tree blank"></button><a href="../index.html">JFY BFC CE</a></li>
+    <li><button class="tree blank"></button><a href="../index2.html">Foreword</a></li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter1safety/index.html">Chapter 1 Safety</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter1safety/safetyconcept.html">Safety concept</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/regulationsandguidelines.html">Regulations and guidelines</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/terms.html">Terms</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/laserclasses.html">Laser classes</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/operationalsafety.html">Operational safety</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/hazards.html">Hazards</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/measurestobetakenbythemanufacturer.html">Measures to be taken by the manufacturer</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/organizationalmeasurestakenbytheoperator.html">Organizational measures taken by the Operator</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/disassemblyanddisposal.html">Disassembly and disposal</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter2installationconditions/index.html">Chapter 2 Installation conditions</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/responsibilities.html">Responsibilities</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/workplanassistance.html">Work plan assistance</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/installationsite.html">Installation site</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/gassupply.html">Gas supply</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/electrics.html">Electrics</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/productionmaterials.html">Production materials</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/transport.html">Transport</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter3description/index.html">Chapter 3 Description</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter3description/importantcomponents.html">Important components</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/controlsystem.html">Control system</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/technicaldata.html">Technical data</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree open"></button>
+      <a href="index.html">Chapter 4 Operation</a>
+      <ul>
+        <li><button class="tree blank"></button><a href="descriptionofoperatingelementsanddisplay.html">Description of operating elements and display</a></li>
+        <li><button class="tree blank"></button><a href="systeminterface.html">System interface</a></li>
+        <li><button class="tree blank"></button><a href="switchingthemachineonandoff.html">Switching the machine on and off</a></li>
+        <li><button class="tree blank"></button><a href="operationprocess.html">Operation process</a></li>
+        <li><button class="tree blank"></button><a class="active" href="assistingfunctions.html">Assisting functions</a></li>
+        <li><button class="tree blank"></button><a href="alarmandself-diagnosticfunctions.html">Alarm and self-diagnostic functions</a></li>
+        <li><button class="tree blank"></button><a href="alarmtracking.html">Alarm tracking</a></li>
+        <li><button class="tree blank"></button><a href="settingandadjustment.html">Setting and adjustment</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter5maintenance/index.html">Chapter 5 Maintenance</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/maintenanceofthelaserdevice.html">Maintenance of the laser device</a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/machinemaintenance.html">Machine maintenance </a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/instructionofcuttingheadmaintenance.html">Instruction of cutting head maintenance</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter6basicsofcuttingtechnology/index.html">Chapter 6 Basics of Cutting Technology </a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/basictheoryoflasercutting.html">Basic theory of laser cutting</a></li>
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/lasercuttingprocess.html">Laser cutting process</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter7appendix/index.html">Chapter 7 Appendix</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter7appendix/appendixa_analysisofcommoncuts.html">Appendix A: Analysis of common cuts</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter8noisemeasurement/index.html">Chapter 8 Noise Measurement</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingcontent.html">Testing content</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingresult.html">Testing result</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/machinelayout&measuringpoints.html">Machine layout & measuring points</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/comments.html">Comments</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+  <div>
+    <button>
+      <img src="../res/home.png">
+    </button>
+  </div>
+  <div>
+    <a href="index.html">Chapter 4 Operation</a>
+  </div>
+  <div>/</div>
+  <div>
+    <a href="assistingfunctions.html">Assisting functions</a>
+  </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Assisting functions</h1>
+<div class="sect1">
+<h2 id="_5_1_simulation">5.1 Simulation</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Users can simulate the cutting process to check the cutting sequence in program. This process is executed in software only and no command will be sent to the machine. By simulating the processing, users can check the sequence between parts and in parts.</p>
+</div>
+<div class="paragraph">
+<p>Click “Simu” in console. It will be automatically switched to“CNC”menu. You can adjust simulation speed in tool bar.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image85.png" alt="img/image85" width="235" height="87">
+</div>
+<div class="title">Figure 1. Figure 4- 14</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_2_findedge">5.2 FindEdge</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CypCutE supports two patterns of sheet edge locating: BCS100 Find Edge and manual edge location. Click “Find Edge” and in the drop-down menu you can select the find-edge pattern to locate sheet position and edge. Find edge result will be displayed on the top right area of the drawing board.</p>
+</div>
+<div class="paragraph">
+<p>By clicking “Sizing” button under “CNC” tab or clicking “Capacitance Sizing”, you can open the capacitance sizing interface.</p>
+</div>
+<div class="paragraph">
+<p>Sheet size X refers to the sheet length on X direction; sheet size Y refer to the sheet length on Y direction. The 2<sup>nd</sup> and 3<sup>rd</sup> positions to locate the sheet edge is calculated with the sheet dimension. It’s recommended to input values slightly lower than actual dimensions to avoid laser head collision with the slat teeth.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/image67.png" alt="img/image67" width="74" height="64"></span></p>
+</div>
+<div class="paragraph">
+<p>Make sure that the parameters values are matched with the measured sheet dimensions. It’s recommended to set the values slightly smaller than the measured dimensions. Wrong setting may lead to cutting head collision with the slats.</p>
+</div>
+<div class="paragraph">
+<p>Margin: Find-edge result will determine a 0 point of the sheet. This margin is used to adjust the 0 point inward or outward the sheet. If you have set margin in nesting plate, you can input 0 here.</p>
+</div>
+<div class="paragraph">
+<p>Identify sheet dimensions: set sheet dimensions automatically according the border of the graphic</p>
+</div>
+<div class="paragraph">
+<p>6-point Find Edge: Recommended for use on thin sheet. Laser head will execute 6 times find-edge action to reduce the interference of the slat teeth.</p>
+</div>
+<div class="paragraph">
+<p>Start from preset position: You can set a fixed position from which the find edge process start every time. You can define a proper position as the fixed position for the laser head. This position must be within the sheet.</p>
+</div>
+<div class="paragraph">
+<p>Start from current position: Laser head will start finding edge from current position.Please make sure that the laser head is within the sheet.</p>
+</div>
+<div class="paragraph">
+<p>If “find edge before machining” is selected, the machine will execute FindEdge before machining.</p>
+</div>
+<div class="paragraph">
+<p>Note: Before executing the Find Edge function, please make sure that the laser head is able to follow the material properly. The inclination angle of the sheet should not exceed 10 degrees.</p>
+</div>
+<div class="paragraph">
+<p>Find edge parameter window is shown as below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image96.png" alt="img/image96" width="458" height="408">
+</div>
+<div class="title">Figure 2. Figure 4- 15</div>
+</div>
+<div class="paragraph">
+<p>You can also set more detailed actions by clicking “Detail settings” at bottom left corner.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image97.jpeg" alt="\\srv62data1\users$\jiang.xue\Desktop\说明书\pics\电容寻边.jpg" width="367" height="288">
+</div>
+<div class="title">Figure 3. Figure 4- 16</div>
+</div>
+<div class="paragraph">
+<p>Find edge speed affects the accuracy of result, recommended 100mm/s.</p>
+</div>
+<div class="paragraph">
+<p>Find edge height is the distance between the nozzle and sheet during the find-edge process.</p>
+</div>
+<div class="paragraph">
+<p>Prong Dif is the gap between the adjacent tooth tips of the pallet slat.</p>
+</div>
+<div class="paragraph">
+<p>2-point distance and 2-Pt (short side) decide positions of the other two points.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_3_frame">5.3 Frame</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Click the “’<span class="image"><img src="img/image98.png" alt="img/image98" width="32" height="32"></span>” button on the console. The laser head will move along the outline of graphic to be processed in a rectangular frame.This will help the users identify the machining position and workpiece dimensions. To set the frame speed, go to ”Layer”, “Global parameters” and “Frame speed”.</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/image67.png" alt="img/image67" width="74" height="64"></span></p>
+</div>
+<div class="paragraph">
+<p>Note: If find edge is executed before frame operation, the find-edge result will be saved. When executing frame, the laser head will move along a tilted rectangle which is corrected by the find-edge result. See “Find Edge” section for details.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_4_start_and_dry_run">5.4 Start and Dry Run</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Click “<span class="image"><img src="img/image99.png" alt="img/image99" width="63" height="25"></span>” to start machining. The machining process will be monitored for parameters such as coordinates, speed, time count and follow height etc.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image100.png" alt="img/image100" width="553" height="80">
+</div>
+<div class="title">Figure 4. Figure 4- 17</div>
+</div>
+<div class="paragraph">
+<p>When the above status is displayed, you can not switch to other pages except the File menu to secure the graphics against being modified by mistake when machining. You can pause the machining to change parameters, which will take effect once the machining is resumed. If the change is made without pausing the machining, the new settings will take effect from the next machining.</p>
+</div>
+<div class="paragraph">
+<p>Click “<span class="image"><img src="img/image101.png" alt="img/image101" width="72" height="27"></span>” button, the laser head will move along the actual cutting path with the same speed and acceleration. But the laser, gas and follow function are turned off. Meanwhile, other functions such as pause, resume, forward, backward and break point information etc remain the same as the actual cutting. Dry run is used to check the machining process without cutting the sheet.</p>
+</div>
+<div class="paragraph">
+<p>By default setting, laser head will return to zero point after finishing machining. If you want the laser head to return to a specified position, you can choose from zero point, start point, end point, origin and mark points om the control panel.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image102.png" alt="img/image102" width="283" height="161">
+</div>
+<div class="title">Figure 5. Figure 4- 18</div>
+</div>
+<div class="paragraph">
+<p>If “<span class="image"><img src="img/image103.png" alt="img/image103" width="122" height="18"></span>” is not selected, laser head will stand still at the finish position of the machining. If you want the laser head to return to a mark point, select “Process ends, go to” + desired position.</p>
+</div>
+<div class="paragraph">
+<p>After a machining process ends, 1 will be added up in “Finished” on the console panel. When “Finished” value reaches “Total” value, a prompt message will appear to remind the users. When the machining process is completed, you can set target number of machining and laser head actions in “<span class="image"><img src="img/image104.png" alt="img/image104" width="72" height="29"></span>”. For cycle processing, click “<span class="image"><img src="img/image105.png" alt="img/image105" width="82" height="31"></span>” button to complete the setting.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_5_stop_pause_and_resume">5.5 Stop, Pause and Resume</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>To stop processing, click “<span class="image"><img src="img/image106.png" alt="img/image106" width="20" height="19"></span>” or “<span class="image"><img src="img/image107.png" alt="img/image107" width="69" height="27"></span>” button on the console.</p>
+</div>
+<div class="paragraph">
+<p>Click “<span class="image"><img src="img/image108.png" alt="img/image108" width="20" height="19"></span>” or “<span class="image"><img src="img/image109.png" alt="img/image109" width="68" height="25"></span>” button on the console to pause the machining process. Meanwhile, you can modify parameters in layer window, or execute the functions on the console panel such as burst laser, turn on/off gas and follow function etc.</p>
+</div>
+<div class="paragraph">
+<p>Click “<span class="image"><img src="img/image110.png" alt="img/image110" width="23" height="18"></span>” or “<span class="image"><img src="img/image111.png" alt="img/image111" width="74" height="27"></span>” button on the console to resume the machining process from interrupted position. Click “<span class="image"><img src="img/image111.png" alt="img/image111" width="74" height="27"></span>” button will resume the machining process without piercing.</p>
+</div>
+<div class="paragraph">
+<p>Click “<span class="image"><img src="img/image112.png" alt="img/image112" width="72" height="28"></span>” or “<span class="image"><img src="img/image113.png" alt="img/image113" width="78" height="30"></span>” button to move the laser head backward or forward along the cutting path.The step size and speed can be set at “<span class="image"><img src="img/image114.png" alt="img/image114" width="255" height="24"></span>” on the console.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_6_break_point">5.6 Break point</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When the machining process is interrupted by accident or stops, the break point will be saved by software. As long as the graphics and parameters are not modified, you can click the “<span class="image"><img src="img/image115.png" alt="img/image115" width="74" height="28"></span>” button to locate the break point automatically. Click the “<span class="image"><img src="img/image116.png" alt="img/image116" width="86" height="33"></span>” button and the program will resume machining from the break point.</p>
+</div>
+<div class="paragraph">
+<p>If related parameters are changed after the machining process is stopped, the “Start” button will be displayed with an asterisk sign “  ”. When “<span class="image"><img src="img/image117.png" alt="img/image117" width="86" height="33"></span>” appears, break point functions will not be available.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_7_start_at_a_specified_position">5.7 Start at a specified position</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CypCutE allows the users to start machining from any specified position. Right click on the graphic where you want to start machining and select “Start from here” as shown below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image118.png" alt="C:\Users\cai.shuqing\Documents\WXWork\1688855481496439\Cache\Image\2024-01\企业微信截图_17061689238508.png" width="213" height="282">
+</div>
+<div class="title">Figure 6. Figure 4- 19</div>
+</div>
+<div class="paragraph">
+<p>For safety concern, after “Start from here” is selected, a confirmation dialog box will pop up again. After confirmation, the laser head will move to the specified position and then start machining. The path before the specified position will not be processed.</p>
+</div>
+<div class="paragraph">
+<p>If you want the laser head to stop at the specified position only and not to start machining, select “Locate here”. The laser head will move to the specified position and enter the pause mode.</p>
+</div>
+<div class="paragraph">
+<p>You can execute”Locate here” multiple times with right click until the desired position is reached. Or you can click “<span class="image"><img src="img/image113.png" alt="img/image113" width="78" height="30"></span>” and “<span class="image"><img src="img/image112.png" alt="img/image112" width="72" height="28"></span>” to locate a position more precisely.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_5_8_global_parameters">5.8 Global parameters</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Under “Global parameter” tab in the “Layer parameter adjustment” dialog box, you will find some motion control parameters which can be modified. Modification of these parameter settings will affect the machine running condition, cutting performance and efficiency.</p>
+</div>
+<div class="paragraph">
+<p>Below are part of the parameters listed in “Global parameters” tab:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Table 4- 4</caption>
+<colgroup>
+<col style="width: 31%;">
+<col style="width: 69%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Motion Control Parameters</th>
+<th class="tableblock halign-left valign-top"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Travel speed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dry run speed (different from cutting speed)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Travel acceleration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max axis acceleration of on dry run. Used in combination with travel speed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Travel low-pass frequency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Travel acceleration jerk on dry run. Used in combination with travel acceleration.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Frame speed</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Speed of frame-walk on outline of the workpiece.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cutting acceleration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max axis acceleration in cutting; Used in combination with cutting speed.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cutting low-pass frequency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acceleration jerk in cutting. Used in combination with cutting acceleration.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jog acceleration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acceleration in jogging.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Jog low-pass frequency</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acceleration jerk in jogging. Used in combination with jog acceleration</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corner acceleration</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The acceleration at corner position when travel direction changes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Curve precision</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The smaller the value, the higher the machining accuracy of the curve.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Corner precision</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The smaller the value, the higher the machining accuracy of corners.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Default Settings</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gas-on delay</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Blowing delay before cutting.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">First gas-on delay</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delay when open gas first time after machine start-up.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pre gas on</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pre-blowing time when switching the gas.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gas switch delay</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">he delay time required to make sure the old gas is totally discharged and the new gas fully fill the gas circuit</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cooling delay</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The time of blowing gas at cooling point.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">System delay</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delay of servo response</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resume, stepback</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The distance traveled by the laser head back to the cutting path when resuming the machining process from pause status</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gas Parameters</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gas pressure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gas pressure when performing blowing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gas on</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Duration of a single blowing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Interval</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gas shut-off of gas flushing process.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Start, Gas on</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Blowing times at the beginning of processing,</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Resume, Gas on</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Blowing time when resuming processing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Follow Control Parameter</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lift height</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maximum height of frog leap</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max follow height</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">There is an upper limit of the follow height. When this max follow height is required, e.g. for piercing, Z axis will move in 2 steps: Z axis will follow to a close position to the sheet surface and then lift up to the max follow height. This parameter is used to set the upper limit of the follow height.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Frog leap lift</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Travel on X/Y direction without Z axis lifted to the correct position in order to save time</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Smart Frog Leap</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Automatically adjust the frog leap height according to the tilting conditions of the workpieces.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Frog-leap start height</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lift to the set height before execute frog leap</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max frog jump distance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The distance from the start of the frog jump.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Short distance without lifting</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">When the length of air movement is less than this length, the elevator does not lift up during air movement, and keeps following state.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hold fixed height</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Suitable for non-metal cutting. If this option is selected, follow function will be disabled and only location function available</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Smart follow</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Short-distance travel without sheet detection</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Preset Parameters</p></td>
+<td class="tableblock halign-left valign-top"></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Enabling NURBS spline interpolation</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">After checking it, NURBS fitting will be performed adaptively for the machining curve, which can improve the machining speed and smoothness of graphics.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlyCut at MicroJoint</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No pause at microjoints wutg fly cutting. Invalid when piercing techniques are enabled.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Technique check</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check whether the default process parameters are valid.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thickness check</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check whether the material thickness information is set in the process parameter interface.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quick Find Edge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Reduce the number of the safe edge-searching processes.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Edit PLC Process</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PLC process editing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pierce Defilm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Set the cutting sequence for deburring and pre-piercing.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlyCut overcut</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Overfly cut distance which ensures that part is cut smoothly.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extended cufoff length</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The length of over-cut when cutting cut-off line.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gas on protection</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Select “Blow” in layer settings, and set gas pressure here.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Unit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Selection of the unit of parameters according to your preference.</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+  <h3>Contents</h3>
+  <ul>
+    <li level="1">
+      <a href="#_5_1_simulation">5.1 Simulation</a>
+    </li>
+    <li level="1">
+      <a href="#_5_2_findedge">5.2 FindEdge</a>
+    </li>
+    <li level="1">
+      <a href="#_5_3_frame">5.3 Frame</a>
+    </li>
+    <li level="1">
+      <a href="#_5_4_start_and_dry_run">5.4 Start and Dry Run</a>
+    </li>
+    <li level="1">
+      <a href="#_5_5_stop_pause_and_resume">5.5 Stop, Pause and Resume</a>
+    </li>
+    <li level="1">
+      <a href="#_5_6_break_point">5.6 Break point</a>
+    </li>
+    <li level="1">
+      <a href="#_5_7_start_at_a_specified_position">5.7 Start at a specified position</a>
+    </li>
+    <li level="1">
+      <a href="#_5_8_global_parameters">5.8 Global parameters</a>
+    </li>
+  </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+  <span class="prev"><a href="operationprocess.html">Operation process</a></span>
+  <span class="next"><a href="alarmandself-diagnosticfunctions.html">Alarm and self-diagnostic functions</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 by JJiangsu Jinfangyuan CNC Machine Co., Ltd .. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

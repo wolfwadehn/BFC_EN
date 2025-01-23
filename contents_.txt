@@ -1,0 +1,8 @@
+[Chapter1Safety]
+[Chapter2Installationconditions]
+[Chapter3Description]
+[Chapter4Operation]
+[Chapter5Maintenance]
+[Chapter6BasicsofCuttingTechnology]
+[Chapter7Appendix]
+[Chapter8NoiseMeasurement]

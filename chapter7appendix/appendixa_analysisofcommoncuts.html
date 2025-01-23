@@ -1,0 +1,392 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Appendix A: Analysis of common cuts</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>BFC Operator’s Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+  <ul>
+    <li><button class="tree blank"></button><a href="../index.html">JFY BFC CE</a></li>
+    <li><button class="tree blank"></button><a href="../index2.html">Foreword</a></li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter1safety/index.html">Chapter 1 Safety</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter1safety/safetyconcept.html">Safety concept</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/regulationsandguidelines.html">Regulations and guidelines</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/terms.html">Terms</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/laserclasses.html">Laser classes</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/operationalsafety.html">Operational safety</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/hazards.html">Hazards</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/measurestobetakenbythemanufacturer.html">Measures to be taken by the manufacturer</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/organizationalmeasurestakenbytheoperator.html">Organizational measures taken by the Operator</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/disassemblyanddisposal.html">Disassembly and disposal</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter2installationconditions/index.html">Chapter 2 Installation conditions</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/responsibilities.html">Responsibilities</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/workplanassistance.html">Work plan assistance</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/installationsite.html">Installation site</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/gassupply.html">Gas supply</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/electrics.html">Electrics</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/productionmaterials.html">Production materials</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/transport.html">Transport</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter3description/index.html">Chapter 3 Description</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter3description/importantcomponents.html">Important components</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/controlsystem.html">Control system</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/technicaldata.html">Technical data</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter4operation/index.html">Chapter 4 Operation</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter4operation/descriptionofoperatingelementsanddisplay.html">Description of operating elements and display</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/systeminterface.html">System interface</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/switchingthemachineonandoff.html">Switching the machine on and off</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/operationprocess.html">Operation process</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/assistingfunctions.html">Assisting functions</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/alarmandself-diagnosticfunctions.html">Alarm and self-diagnostic functions</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/alarmtracking.html">Alarm tracking</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/settingandadjustment.html">Setting and adjustment</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter5maintenance/index.html">Chapter 5 Maintenance</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/maintenanceofthelaserdevice.html">Maintenance of the laser device</a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/machinemaintenance.html">Machine maintenance </a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/instructionofcuttingheadmaintenance.html">Instruction of cutting head maintenance</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter6basicsofcuttingtechnology/index.html">Chapter 6 Basics of Cutting Technology </a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/basictheoryoflasercutting.html">Basic theory of laser cutting</a></li>
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/lasercuttingprocess.html">Laser cutting process</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree open"></button>
+      <a href="index.html">Chapter 7 Appendix</a>
+      <ul>
+        <li><button class="tree blank"></button><a class="active" href="appendixa_analysisofcommoncuts.html">Appendix A: Analysis of common cuts</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter8noisemeasurement/index.html">Chapter 8 Noise Measurement</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingcontent.html">Testing content</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingresult.html">Testing result</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/machinelayout&measuringpoints.html">Machine layout & measuring points</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/comments.html">Comments</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+  <div>
+    <button>
+      <img src="../res/home.png">
+    </button>
+  </div>
+  <div>
+    <a href="index.html">Chapter 7 Appendix</a>
+  </div>
+  <div>/</div>
+  <div>
+    <a href="appendixa_analysisofcommoncuts.html">Appendix A: Analysis of common cuts</a>
+  </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Appendix A: Analysis of common cuts</h1>
+<div class="paragraph">
+<p>Analysis of mild steel common cuts: cutting with oxygen.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Table 7-1</caption>
+<colgroup>
+<col style="width: 43%;">
+<col style="width: 27%;">
+<col style="width: 30%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Appearance</th>
+<th class="tableblock halign-left valign-top">Possible causes</th>
+<th class="tableblock halign-left valign-top">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No burrs. Vertical and regular striation.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Suitable cutting parameters.</p>
+</div>
+<div class="paragraph">
+<p>Suitable feed rate.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Striations offset significantly at the lower cut edge. Wider kerf width on the bottom surface.</p>
+<p class="tableblock"><span class="image"><img src="img/image172.wmf" alt="img/image172"></span></p>
+<p class="tableblock">Feed rate too high.</p>
+<p class="tableblock">Power too low.</p>
+<p class="tableblock">Cutting gas pressure too low.</p>
+<p class="tableblock">Focus position too high.</p>
+<p class="tableblock">Lower feed rate.</p>
+<p class="tableblock">Increase power.</p>
+<p class="tableblock">Increase gas pressure.</p>
+<p class="tableblock">Lower focus position.</p>
+<p class="tableblock">Drip-shaped burrs similar to slags that are easy to remove.</p>
+<p class="tableblock"><span class="image"><img src="img/image173.jpeg" alt="002" width="198" height="63"></span></p>
+<p class="tableblock">Feed rate too high.</p>
+<p class="tableblock">Gas pressure too low.</p>
+<p class="tableblock">Focus position too high.</p>
+<p class="tableblock">Lower feed rate.</p>
+<p class="tableblock">Increase gas pressure.</p>
+<p class="tableblock">Lower focus position.</p>
+<p class="tableblock">Molten and connected metal burrs that are easy to remove as a whole piece.</p>
+<p class="tableblock"><span class="image"><img src="img/image174.jpeg" alt="003" width="200" height="72"></span></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Focus position too high.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lower focus position.</p>
+<p class="tableblock">Molten burrs at both sides on the bottom surface that are hard to remove.</p>
+<p class="tableblock"><span class="image"><img src="img/image175.jpeg" alt="004" width="192" height="64"></span></p>
+<p class="tableblock">Feed rate too high.</p>
+<p class="tableblock">Gas pressure too low.</p>
+<p class="tableblock">Gas contamination.</p>
+<p class="tableblock">Focus position too high.</p>
+<p class="tableblock">Lower feed rate.</p>
+<p class="tableblock">Increase gas pressure.</p>
+<p class="tableblock">Replace with contamination-free gas.</p>
+<p class="tableblock">Lower focus position.</p>
+<p class="tableblock">Burrs at one side only.</p>
+<p class="tableblock"><span class="image"><img src="img/image176.jpeg" alt="005" width="185" height="64"></span></p>
+<p class="tableblock">Beam not aligned to the nozzle center.</p>
+<p class="tableblock">Defective nozzle orifice.</p>
+<p class="tableblock">Align the beam to the nozzle center.</p>
+<p class="tableblock">Exchange nozzle.</p>
+<p class="tableblock">Discharge of surface material only.</p>
+<p class="tableblock"><span class="image"><img src="img/image177.jpeg" alt="07" width="219" height="77"></span></p>
+<p class="tableblock">Power too low.</p>
+<p class="tableblock">Feed rate too high.</p>
+<p class="tableblock">Increase laser power.</p>
+<p class="tableblock">Lower feed rate.</p>
+<p class="tableblock">Blue plasma indicates that the sheet is not cut through.</p>
+<p class="tableblock"><span class="image"><img src="img/image178.jpeg" alt="006" width="211" height="97"></span></p>
+<p class="tableblock">Wrong gas (N<sub>2</sub>)</p>
+<p class="tableblock">Feed rate too high.</p>
+<p class="tableblock">Laser power too low.</p>
+<p class="tableblock">Use oxygen as assist gas.</p>
+<p class="tableblock">Lower feed rate.</p>
+<p class="tableblock">Increase laser power.</p>
+<p class="tableblock">Rough cut edge.</p>
+<p class="tableblock"><span class="image"><img src="img/image179.jpeg" alt="009" width="220" height="66"></span></p>
+<p class="tableblock">Gas pressure too high.</p>
+<p class="tableblock">Damaged nozzle.</p>
+<p class="tableblock">Nozzle diameter too large.</p>
+<p class="tableblock">Poor sheet quality.</p>
+<p class="tableblock">Lower gas pressure.</p>
+<p class="tableblock">Exchange nozzle.</p>
+<p class="tableblock">Install nozzle of correct diameter.</p>
+<p class="tableblock">Replace with better quality sheet.</p>
+<p class="tableblock">No burrs. Striations lag behind at the lower cut edge. Tapered kerf.</p>
+<p class="tableblock"><span class="image"><img src="img/image180.jpeg" alt="010" width="220" height="67"></span></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Feed rate too high.</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Analysis of stainless steel common cuts: cutting with nitrogen at high pressure.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Table 7- 1</caption>
+<colgroup>
+<col style="width: 45%;">
+<col style="width: 26%;">
+<col style="width: 29%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Appearance</th>
+<th class="tableblock halign-left valign-top">Possible causes</th>
+<th class="tableblock halign-left valign-top">Solution
+
+Smooth cut edge with regular ridged burrs.
+
+
+
+<span class="image"><img src="img/image183.jpeg" alt="013" width="227" height="69"></span>
+
+
+
+Focus position too low.
+
+Feed rate too high.
+
+Raise the focus position.
+
+Lower the feed rate.
+
+Rough, ridged and oxidized burrs at both sides of the lower edges when cutting large contour.
+
+
+
+<span class="image"><img src="img/image184.jpeg" alt="014" width="220" height="81"></span>
+
+
+
+Focus position too high.
+
+Feed rate too ow.
+
+Power too low.
+
+Overheated material.
+
+Lower the focus position.
+
+Increase the feed rate.
+
+Increase the power.
+
+Cooling of the material.
+
+Long, rough and ridged burrs on one side.
+
+
+
+<span class="image"><img src="img/image185.jpeg" alt="015" width="227" height="92"></span>
+
+
+
+Nozzle center is not aligned with the beam.
+
+Focus position too high.
+
+Pressure too low.
+
+Feed rate too low.
+
+Align the beam with the nozzle center.
+
+Lower the focus position.
+
+Increase gas pressure.
+
+Increase the feed rate.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Light yellowish cut edge.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">High-purity nitrogen is mixed with oxygen.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Use nitrogen of good quality.</p>
+<p class="tableblock">Linear plasma light.</p>
+<p class="tableblock"><span class="image"><img src="img/image186.jpeg" alt="016" width="227" height="98"></span></p>
+<p class="tableblock">Feed rate too high.</p>
+<p class="tableblock">Power too low.</p>
+<p class="tableblock">Focus position too low.</p>
+<p class="tableblock">Lower the feed rate.</p>
+<p class="tableblock">Increase the power.</p>
+<p class="tableblock">Raise the focus position.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Light from cutting disappears at the start of cutting.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Start-up acceleration too high.</p>
+</div>
+<div class="paragraph">
+<p>Focus position too low.</p>
+</div>
+<div class="paragraph">
+<p>Molten material can not be blown away.</p>
+</div>
+<div class="paragraph">
+<p>Lower the start-up acceleration.</p>
+</div>
+<div class="paragraph">
+<p>Raise the focus position.</p>
+</div>
+<div class="paragraph">
+<p>Add an additional piercing hole.</p>
+</div>
+<div class="paragraph">
+<p>Increase the gas pressure gradually.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Rough cut edge.</p></td>
+</tr>
+</tbody>
+</table>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc"></aside>
+                </div>
+            </div>
+            <nav class="pagination">
+  <span class="prev"><a href="index.html">Chapter 7 Appendix</a></span>
+  <span class="next"><a href="../chapter8noisemeasurement/index.html">Chapter 8 Noise Measurement</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 by JJiangsu Jinfangyuan CNC Machine Co., Ltd .. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

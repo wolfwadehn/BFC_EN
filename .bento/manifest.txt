@@ -1,0 +1,4 @@
+TITLE=BFC Operator’s Manual
+OUTDIR=../htmlver
+LOGO=img/logo.png,123,50
+COPYRIGHT=Copyright &copy; 2025 by JJiangsu Jinfangyuan CNC Machine Co., Ltd .. All rights reserved.

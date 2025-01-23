@@ -1,0 +1,550 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Gas supply</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>BFC Operator’s Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+  <ul>
+    <li><button class="tree blank"></button><a href="../index.html">JFY BFC CE</a></li>
+    <li><button class="tree blank"></button><a href="../index2.html">Foreword</a></li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter1safety/index.html">Chapter 1 Safety</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter1safety/safetyconcept.html">Safety concept</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/regulationsandguidelines.html">Regulations and guidelines</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/terms.html">Terms</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/laserclasses.html">Laser classes</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/operationalsafety.html">Operational safety</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/hazards.html">Hazards</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/measurestobetakenbythemanufacturer.html">Measures to be taken by the manufacturer</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/organizationalmeasurestakenbytheoperator.html">Organizational measures taken by the Operator</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/disassemblyanddisposal.html">Disassembly and disposal</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree open"></button>
+      <a href="index.html">Chapter 2 Installation conditions</a>
+      <ul>
+        <li><button class="tree blank"></button><a href="responsibilities.html">Responsibilities</a></li>
+        <li><button class="tree blank"></button><a href="workplanassistance.html">Work plan assistance</a></li>
+        <li><button class="tree blank"></button><a href="installationsite.html">Installation site</a></li>
+        <li><button class="tree blank"></button><a class="active" href="gassupply.html">Gas supply</a></li>
+        <li><button class="tree blank"></button><a href="electrics.html">Electrics</a></li>
+        <li><button class="tree blank"></button><a href="productionmaterials.html">Production materials</a></li>
+        <li><button class="tree blank"></button><a href="transport.html">Transport</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter3description/index.html">Chapter 3 Description</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter3description/importantcomponents.html">Important components</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/controlsystem.html">Control system</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/technicaldata.html">Technical data</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter4operation/index.html">Chapter 4 Operation</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter4operation/descriptionofoperatingelementsanddisplay.html">Description of operating elements and display</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/systeminterface.html">System interface</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/switchingthemachineonandoff.html">Switching the machine on and off</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/operationprocess.html">Operation process</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/assistingfunctions.html">Assisting functions</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/alarmandself-diagnosticfunctions.html">Alarm and self-diagnostic functions</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/alarmtracking.html">Alarm tracking</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/settingandadjustment.html">Setting and adjustment</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter5maintenance/index.html">Chapter 5 Maintenance</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/maintenanceofthelaserdevice.html">Maintenance of the laser device</a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/machinemaintenance.html">Machine maintenance </a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/instructionofcuttingheadmaintenance.html">Instruction of cutting head maintenance</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter6basicsofcuttingtechnology/index.html">Chapter 6 Basics of Cutting Technology </a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/basictheoryoflasercutting.html">Basic theory of laser cutting</a></li>
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/lasercuttingprocess.html">Laser cutting process</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter7appendix/index.html">Chapter 7 Appendix</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter7appendix/appendixa_analysisofcommoncuts.html">Appendix A: Analysis of common cuts</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter8noisemeasurement/index.html">Chapter 8 Noise Measurement</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingcontent.html">Testing content</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingresult.html">Testing result</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/machinelayout&measuringpoints.html">Machine layout & measuring points</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/comments.html">Comments</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+  <div>
+    <button>
+      <img src="../res/home.png">
+    </button>
+  </div>
+  <div>
+    <a href="index.html">Chapter 2 Installation conditions</a>
+  </div>
+  <div>/</div>
+  <div>
+    <a href="gassupply.html">Gas supply</a>
+  </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Gas supply</h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Organization</p>
+</div>
+<div class="paragraph">
+<p>A professional gas installation is a basic prerequisite for smooth commissioning and trouble-free operation of the system. Therefore, pass on the "Gas supply" section to the commissioned specialist company for industrial gases in good time in accordance with the planning aid.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Urgent recommendation from JFY: The user should consult his gas supplier regarding the gas supply.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Installation must be performed by a qualified industrial gas company.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The appropriate standards must always be observed.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/image4.png" alt="image002" width="132" height="28"></span>Short circuit or fire hazard when gas lines</p>
+</div>
+<div class="paragraph">
+<p>and electrical cables are laid together!</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Do not lay gas lines together with electrical lines in a single cable duct.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Keep gas lines separate up to the connection point on the machine.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>General requirements</p>
+</div>
+<div class="paragraph">
+<p>Gas transport system are to be constructed as follows:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Piping from the supply unit to the shop wall must be installed with a stop valve.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Use pipe or appropriate air hose from shop wall up to the connection point of the machine.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The evaporator must be dimensioned according to the maximum gas consumption of all connected machines. The line from the evaporator to the connection point must be kept as short as possible.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>A stop valve must be installed at the tapping point in every individual supply line to the machine.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The gas installation must be designed in such a way that the supply lines to the connection point of the machine and the connection point itself are unable to ice up.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Gas temperature must not exceed 50 ℃ (120 °F ). This is of particular importance if the required gas pressure is generated by means of pressure booster system.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>A manually operated on-off valve must be installed on the intake pipe of each machine to ensure that there is no residual gas in the pipe during maintenance.</p>
+</div>
+<div class="paragraph">
+<p>If it is necessary to rotate the pressure relief screw in maintenance mode, unscrew it slowly. Stop screwing when you hear a pressure release sound. Due to the high air pressure, it is necessary to keep enough distance to prevent the pressure relief screw from popping out and hurting people. After the maintenance, it is required to tighten the loosened pressure relief screw again to ensure that there is no air leakage during use.</p>
+</div>
+<div class="paragraph">
+<p>To avoid damage to machine parts due to the pressure impact, please open or close the manual valve slowly.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_1_purity">4.1 Purity</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Table 2- 3</caption>
+<colgroup>
+<col style="width: 36%;">
+<col style="width: 64%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Cutting gas</th>
+<th class="tableblock halign-left valign-top">Purity</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">O<sub>2</sub></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99.9%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">N<sub>2</sub> High pressure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99.9%</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compressed air</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oil content≤0.003ppm、Filtration accuracy≤0.01μm、water-free</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_2_cutting_gas_supply_with_cylinders_or_bundles">4.2 Cutting gas supply with cylinders or bundles</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cylinders or bundles</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The easiest and most economical way of supplying cutting gas is with pressure reducers for cylinders or bundles. The transport requirements are higher however, due to the volume of consumption. One bundle consists of twelve cylinders.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The gas flow is interrupted when changing cylinder or bundle.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Pressure safety device with specified pressure regulators connected to the supply unit must be installed. Pressure regulators must be secured against the maximum input pressure (inherently safe).</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_3_cutting_gas_supply_with_gas_tank">4.3 Cutting gas supply with gas tank</h2>
+<div class="sectionbody">
+<div class="literalblock">
+<div class="content">
+<pre>A tank system is appropriate for safe gas supply at a gas consumption (volume under standard conditions) of about 200 - 400 m³ (0.7 cfm - 1.4 cfm) per week.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The optimum tank size depends on the tapping quantity and on the local conditions.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The customer should consult the gas supplier.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>The requirements for high-pressure cutting with nitrogen are as follows:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Do not use a tapping point pressure regulator between the gas tank and the machine behind the pressure regulating station.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>A stop valve must be installed at the end of the piping between the gas tank and the machine, i.e. at the machine entrance.</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_4_supply_lines_for_cutting_gas_supply">4.4 Supply lines for cutting gas supply</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cutting gas connection</p>
+</div>
+<div class="paragraph">
+<p>To provide the customer with a flexible connection option, special hoses and connectors delivered with the machine are provided by JFY. The customer-provided connection point may thus be found at a radius of 10 meters around the connection point on the machine.</p>
+</div>
+<div class="paragraph">
+<p>The pipe system must meet the following requirements:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Oil and grease-free lines made of seamless copper piping (refrigerant- and air conditioning-use pipe quality) are required.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The tubes must be processed free of oil and grease.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Fittings must be connected using special connectors (or brass bite-type connector of the same design). Pressure valve connection system is not allowed to use.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>All sealing points must be secured with flat gaskets.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Sealants such as liquid Teflon, sealing sprays, lubricants and lubricating pastes, hemp or grease must not be used.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Stainless steel tubes are permitted, but not necessary. If stainless steel tubes are used, stainless steel fittings must also be used.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The pipe ends must be sealed securely to avoid dirt in transit and storage.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Hydraulic hoses do not meet the requirements since they are typically not free of particles.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>As a general principle, a stop valve must be mounted before each branch of a ring pipeline in order to make it possible to shut down each ring pipeline segment separately.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_5_requirements_on_the_connection_point_of_the_machine">4.5 Requirements on the connection point of the machine</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Max input pressure must be set on the corresponding pressure regulator:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Table 2- 4</caption>
+<colgroup>
+<col style="width: 32%;">
+<col style="width: 18%;">
+<col style="width: 20%;">
+<col style="width: 30%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"></th>
+<th class="tableblock halign-left valign-top">O<sub>2</sub></th>
+<th class="tableblock halign-left valign-top">N<sub>2</sub> High pressure</th>
+<th class="tableblock halign-left valign-top">Compressed air</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Min. Input pressure in bar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">22</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">14.5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Max. Input pressure in bar</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Purity</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99.9%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">99.9%</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filtration accuracy≤0.01μm，Oil content≤0.003ppm</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_6_cutting_gas_consumption">4.6 Cutting gas consumption</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cutting gas consumption depends on the following factors:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Nozzle diameter.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Cutting gas pressure.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Duration of laser cutting.</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_7_compressed_air_supply">4.7 Compressed air supply</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The customer must provide the compressed air supply line to the customer&#8217;s connection point on the machine</p>
+</div>
+<div class="paragraph">
+<p>Compressed air properties at the tapping point</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 3. Table 2- 5</caption>
+<colgroup>
+<col style="width: 19%;">
+<col style="width: 34%;">
+<col style="width: 17%;">
+<col style="width: 30%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Property</th>
+<th class="tableblock halign-left valign-top">Request</th>
+<th class="tableblock halign-left valign-top">Quality class</th>
+<th class="tableblock halign-left valign-top">Recommendation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dust-free</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filtration accuracy≤0.01μm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">7</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Air filter on the compressor</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Condensate-free</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>Cooled down to +3°C/+37 °F</p>
+</div>
+<div class="paragraph">
+<p>(Pressure dew point)</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cold dryer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oil-free</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oil content≤0.003ppm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Oil-free sealing screw-type compressor with active carbon filter</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+  <h3>Contents</h3>
+  <ul>
+    <li level="1">
+      <a href="#_4_1_purity">4.1 Purity</a>
+    </li>
+    <li level="1">
+      <a href="#_4_2_cutting_gas_supply_with_cylinders_or_bundles">4.2 Cutting gas supply with cylinders or bundles</a>
+    </li>
+    <li level="1">
+      <a href="#_4_3_cutting_gas_supply_with_gas_tank">4.3 Cutting gas supply with gas tank</a>
+    </li>
+    <li level="1">
+      <a href="#_4_4_supply_lines_for_cutting_gas_supply">4.4 Supply lines for cutting gas supply</a>
+    </li>
+    <li level="1">
+      <a href="#_4_5_requirements_on_the_connection_point_of_the_machine">4.5 Requirements on the connection point of the machine</a>
+    </li>
+    <li level="1">
+      <a href="#_4_6_cutting_gas_consumption">4.6 Cutting gas consumption</a>
+    </li>
+    <li level="1">
+      <a href="#_4_7_compressed_air_supply">4.7 Compressed air supply</a>
+    </li>
+  </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+  <span class="prev"><a href="installationsite.html">Installation site</a></span>
+  <span class="next"><a href="electrics.html">Electrics</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 by JJiangsu Jinfangyuan CNC Machine Co., Ltd .. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

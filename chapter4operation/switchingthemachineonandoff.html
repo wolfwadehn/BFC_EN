@@ -1,0 +1,582 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Switching the machine on and off</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>BFC Operator’s Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+  <ul>
+    <li><button class="tree blank"></button><a href="../index.html">JFY BFC CE</a></li>
+    <li><button class="tree blank"></button><a href="../index2.html">Foreword</a></li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter1safety/index.html">Chapter 1 Safety</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter1safety/safetyconcept.html">Safety concept</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/regulationsandguidelines.html">Regulations and guidelines</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/terms.html">Terms</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/laserclasses.html">Laser classes</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/operationalsafety.html">Operational safety</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/hazards.html">Hazards</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/measurestobetakenbythemanufacturer.html">Measures to be taken by the manufacturer</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/organizationalmeasurestakenbytheoperator.html">Organizational measures taken by the Operator</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/disassemblyanddisposal.html">Disassembly and disposal</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter2installationconditions/index.html">Chapter 2 Installation conditions</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/responsibilities.html">Responsibilities</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/workplanassistance.html">Work plan assistance</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/installationsite.html">Installation site</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/gassupply.html">Gas supply</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/electrics.html">Electrics</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/productionmaterials.html">Production materials</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/transport.html">Transport</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter3description/index.html">Chapter 3 Description</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter3description/importantcomponents.html">Important components</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/controlsystem.html">Control system</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/technicaldata.html">Technical data</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree open"></button>
+      <a href="index.html">Chapter 4 Operation</a>
+      <ul>
+        <li><button class="tree blank"></button><a href="descriptionofoperatingelementsanddisplay.html">Description of operating elements and display</a></li>
+        <li><button class="tree blank"></button><a href="systeminterface.html">System interface</a></li>
+        <li><button class="tree blank"></button><a class="active" href="switchingthemachineonandoff.html">Switching the machine on and off</a></li>
+        <li><button class="tree blank"></button><a href="operationprocess.html">Operation process</a></li>
+        <li><button class="tree blank"></button><a href="assistingfunctions.html">Assisting functions</a></li>
+        <li><button class="tree blank"></button><a href="alarmandself-diagnosticfunctions.html">Alarm and self-diagnostic functions</a></li>
+        <li><button class="tree blank"></button><a href="alarmtracking.html">Alarm tracking</a></li>
+        <li><button class="tree blank"></button><a href="settingandadjustment.html">Setting and adjustment</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter5maintenance/index.html">Chapter 5 Maintenance</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/maintenanceofthelaserdevice.html">Maintenance of the laser device</a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/machinemaintenance.html">Machine maintenance </a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/instructionofcuttingheadmaintenance.html">Instruction of cutting head maintenance</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter6basicsofcuttingtechnology/index.html">Chapter 6 Basics of Cutting Technology </a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/basictheoryoflasercutting.html">Basic theory of laser cutting</a></li>
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/lasercuttingprocess.html">Laser cutting process</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter7appendix/index.html">Chapter 7 Appendix</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter7appendix/appendixa_analysisofcommoncuts.html">Appendix A: Analysis of common cuts</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter8noisemeasurement/index.html">Chapter 8 Noise Measurement</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingcontent.html">Testing content</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingresult.html">Testing result</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/machinelayout&measuringpoints.html">Machine layout & measuring points</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/comments.html">Comments</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+  <div>
+    <button>
+      <img src="../res/home.png">
+    </button>
+  </div>
+  <div>
+    <a href="index.html">Chapter 4 Operation</a>
+  </div>
+  <div>/</div>
+  <div>
+    <a href="switchingthemachineonandoff.html">Switching the machine on and off</a>
+  </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Switching the machine on and off</h1>
+<div class="sect1">
+<h2 id="_3_1_unlocking_the_emergency_stop_pushbutton">3.1 Unlocking the EMERGENCY STOP pushbutton</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>EMERGENCY STOP pushbuttons are located on the operating panel of the laser processing machine and on the safety post of the pallet changer.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>To release the EMERGENCY STOP push-button, press it in and turn it in clockwise direction.</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_2_switching_on_the_machine">3.2 Switching on the machine</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Conditions</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>EMERGENCY STOP is released.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Nobody is within the machine’s danger zone.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Make sure that all the slag carts are in the machine.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Compact dust extractor and other components are switched on.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Not fully functioning compact dust extractor and flying sparks and heat development below the machine.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Do not operate the machine without a slag cart.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Turn on the main switch of the switch cabinet.</p>
+</li>
+<li>
+<p>Turn on the Main Switch of the machine.</p>
+</li>
+<li>
+<p>Switch on the machine components</p>
+<div class="literalblock">
+<div class="content">
+<pre>Switch on the process cooler.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Switch on the laser device.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Switch on the system power supply.</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>Log in HMI interface.</p>
+</li>
+<li>
+<p>Machine preparation</p>
+<div class="literalblock">
+<div class="content">
+<pre>Rest machine parameter (No alarm)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Start the process cooler.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Start the laser device.</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="6">
+<li>
+<p>Processing preparation</p>
+<div class="literalblock">
+<div class="content">
+<pre>Follow calibration.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Focal point check.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Co-axiality check.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Picture loading.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Gas supply check.</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="7">
+<li>
+<p>Processing</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_3_switching_off_the_machine">3.3 Switching off the machine</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Condition</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>No more program is being executed.</pre>
+</div>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Machine is stopped for operation.</p>
+</li>
+<li>
+<p>Switch-off preparation</p>
+<div class="literalblock">
+<div class="content">
+<pre>Switch off the laser device.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Switch off the process cooler.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Shut down the operating system.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Switch off the gas supply.</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="3">
+<li>
+<p>Switch off the machine components</p>
+<div class="literalblock">
+<div class="content">
+<pre>Switch off the process cooler</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Switch off the laser device.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Switch off the system power supply.</pre>
+</div>
+</div>
+</li>
+</ol>
+</div>
+<div class="olist arabic">
+<ol class="arabic" start="4">
+<li>
+<p>Turn off the Main Switch of the machine.</p>
+</li>
+<li>
+<p>Turn off the main switch of the switch cabinet.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_4_operation_of_the_laser_device">3.4 Operation of the laser device</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>TruFiber Cut series are fiber laser devices. Therefore, the required procedure must be followed to switch on/off the laser device.</p>
+</div>
+<div class="paragraph">
+<p>Figure 4- 7</p>
+</div>
+<div class="paragraph">
+<p>1 Key switch</p>
+</div>
+<div class="paragraph">
+<p>2 Main switch</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Table 4- 3</caption>
+<colgroup>
+<col style="width: 34%;">
+<col style="width: 33%;">
+<col style="width: 33%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Green LED（Power）</th>
+<th class="tableblock halign-left valign-top">AC power supply is switched on.</th>
+<th class="tableblock halign-left valign-top">Illuminated</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Red LED（Fault）</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">No error or warning.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Laser warning.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Illuminated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Laser alarm.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flashing</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Yellow LED（Emission）</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Laser emission is active.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Illuminated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Blue LED（Reset）</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Electrical system is successfully reset.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Off</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Electrical system fault.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Illuminated</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Electrical system reset is allowed.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Flashing</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>The following must be checked before switching on the laser device:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The process cooler is switched on.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>No alarm message from process cooler.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Turn key switch 1 to “ON” position, turn MAIN SWITCH 2 to “ON” position.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Power LED is permanently lit in green color, indicating the control unit is switched on.</pre>
+</div>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 21%;">
+<col style="width: 79%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top"><span class="image"><img src="img/image67.png" alt="img/image67" width="74" height="64"></span></th>
+<th class="tableblock halign-left valign-top">Please note
+
+
+
+ The laser device must be switched on and off correctly. Incorrect operation will cause damage to the laser device.
+
+ If no alarm is detected from core modules of the laser device, the RESET command of the TruFiber Cut series laser device shown on the user interface and the RESET signal from the front control panel will not be sent to the core modules. However, if RESET signal from the communication port (software) is received, the core modules will be changed to “OFF” state regardless of the operating status.
+
+ In case that the TruFiber Cut series laser is under local control, RESET command from the port and front control panel will not reset alarms from the core modules of the laser device. Currently, reset of the core modules can only be performed via FD90 browser.</th>
+</tr>
+</thead>
+</table>
+<div class="paragraph">
+<p>Switch operation of HMI interface：</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Press the softkey image:img/image68.png[img/image68,width=55,height=54] to enable the laser beam. Indicator LED is illuminated.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Press the softkey image:img/image69.png[img/image69,width=54,height=54] to disable the laser beam. Indicator LED is off.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Emergency shutdown and faulty shutdown</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Press the EMERGENCY STOP button on the front of the laser device.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Laser is switched off. In particular, the laser beam will not be emitted after the EMERGENCY STOP button is pressed. Control unit of the laser remains active. Red indicator LED (fault) is illuminated.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Switch-on after emergency shutdown.</p>
+</div>
+<div class="paragraph">
+<p>Turn in clockwise direction to release the E-stop button. After release, the disabled function are available for use.</p>
+</div>
+<div class="paragraph">
+<p>Check monitoring and error messages</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Eliminate the cause of the error</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Press the reset button.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Switch-off procedure of the laser device:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Turn off the laser beam.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Turn off the MAIN SWITCH of the laser device.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Turn the key switch to “OFF” position and remove the key.</pre>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+  <h3>Contents</h3>
+  <ul>
+    <li level="1">
+      <a href="#_3_1_unlocking_the_emergency_stop_pushbutton">3.1 Unlocking the EMERGENCY STOP pushbutton</a>
+    </li>
+    <li level="1">
+      <a href="#_3_2_switching_on_the_machine">3.2 Switching on the machine</a>
+    </li>
+    <li level="1">
+      <a href="#_3_3_switching_off_the_machine">3.3 Switching off the machine</a>
+    </li>
+    <li level="1">
+      <a href="#_3_4_operation_of_the_laser_device">3.4 Operation of the laser device</a>
+    </li>
+  </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+  <span class="prev"><a href="systeminterface.html">System interface</a></span>
+  <span class="next"><a href="operationprocess.html">Operation process</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 by JJiangsu Jinfangyuan CNC Machine Co., Ltd .. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

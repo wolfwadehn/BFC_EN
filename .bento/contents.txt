@@ -1,0 +1,47 @@
+Index
+index2
+Index
+  Safetyconcept
+  Regulationsandguidelines
+  Terms
+  Laserclasses
+  Operationalsafety
+  Hazards
+  Measurestobetakenbythemanufacturer
+  OrganizationalmeasurestakenbytheOperator
+  Disassemblyanddisposal
+Index
+  Responsibilities
+  Workplanassistance
+  Installationsite
+  Gassupply
+  Electrics
+  Productionmaterials
+  Transport
+Index
+  Importantcomponents
+  Controlsystem
+  Technicaldata
+Index
+  Descriptionofoperatingelementsanddisplay
+  Systeminterface
+  Switchingthemachineonandoff
+  Operationprocess
+  Assistingfunctions
+  Alarmandself-diagnosticfunctions
+  Alarmtracking
+  Settingandadjustment
+Index
+  Maintenanceofthelaserdevice
+  Machinemaintenance
+  Instructionofcuttingheadmaintenance
+Index
+  Basictheoryoflasercutting
+  Lasercuttingprocess
+Index
+  AppendixA_Analysisofcommoncuts
+Index
+  Testingcontent
+  Testingresult
+  Machinelayout&measuringpoints
+  Comments

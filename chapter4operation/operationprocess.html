@@ -1,0 +1,416 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Operation process</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>BFC Operator’s Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+  <ul>
+    <li><button class="tree blank"></button><a href="../index.html">JFY BFC CE</a></li>
+    <li><button class="tree blank"></button><a href="../index2.html">Foreword</a></li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter1safety/index.html">Chapter 1 Safety</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter1safety/safetyconcept.html">Safety concept</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/regulationsandguidelines.html">Regulations and guidelines</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/terms.html">Terms</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/laserclasses.html">Laser classes</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/operationalsafety.html">Operational safety</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/hazards.html">Hazards</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/measurestobetakenbythemanufacturer.html">Measures to be taken by the manufacturer</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/organizationalmeasurestakenbytheoperator.html">Organizational measures taken by the Operator</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/disassemblyanddisposal.html">Disassembly and disposal</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter2installationconditions/index.html">Chapter 2 Installation conditions</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/responsibilities.html">Responsibilities</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/workplanassistance.html">Work plan assistance</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/installationsite.html">Installation site</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/gassupply.html">Gas supply</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/electrics.html">Electrics</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/productionmaterials.html">Production materials</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/transport.html">Transport</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter3description/index.html">Chapter 3 Description</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter3description/importantcomponents.html">Important components</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/controlsystem.html">Control system</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/technicaldata.html">Technical data</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree open"></button>
+      <a href="index.html">Chapter 4 Operation</a>
+      <ul>
+        <li><button class="tree blank"></button><a href="descriptionofoperatingelementsanddisplay.html">Description of operating elements and display</a></li>
+        <li><button class="tree blank"></button><a href="systeminterface.html">System interface</a></li>
+        <li><button class="tree blank"></button><a href="switchingthemachineonandoff.html">Switching the machine on and off</a></li>
+        <li><button class="tree blank"></button><a class="active" href="operationprocess.html">Operation process</a></li>
+        <li><button class="tree blank"></button><a href="assistingfunctions.html">Assisting functions</a></li>
+        <li><button class="tree blank"></button><a href="alarmandself-diagnosticfunctions.html">Alarm and self-diagnostic functions</a></li>
+        <li><button class="tree blank"></button><a href="alarmtracking.html">Alarm tracking</a></li>
+        <li><button class="tree blank"></button><a href="settingandadjustment.html">Setting and adjustment</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter5maintenance/index.html">Chapter 5 Maintenance</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/maintenanceofthelaserdevice.html">Maintenance of the laser device</a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/machinemaintenance.html">Machine maintenance </a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/instructionofcuttingheadmaintenance.html">Instruction of cutting head maintenance</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter6basicsofcuttingtechnology/index.html">Chapter 6 Basics of Cutting Technology </a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/basictheoryoflasercutting.html">Basic theory of laser cutting</a></li>
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/lasercuttingprocess.html">Laser cutting process</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter7appendix/index.html">Chapter 7 Appendix</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter7appendix/appendixa_analysisofcommoncuts.html">Appendix A: Analysis of common cuts</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter8noisemeasurement/index.html">Chapter 8 Noise Measurement</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingcontent.html">Testing content</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingresult.html">Testing result</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/machinelayout&measuringpoints.html">Machine layout & measuring points</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/comments.html">Comments</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+  <div>
+    <button>
+      <img src="../res/home.png">
+    </button>
+  </div>
+  <div>
+    <a href="index.html">Chapter 4 Operation</a>
+  </div>
+  <div>/</div>
+  <div>
+    <a href="operationprocess.html">Operation process</a>
+  </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Operation process</h1>
+<div class="sect1">
+<h2 id="_4_1_manual_mode">4.1 Manual mode</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Some of the functions of the “Manual control” console are shown as below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image70.png" alt="img/image70" width="359" height="240">
+</div>
+<div class="title">Figure 1. Figure 4- 8</div>
+</div>
+<div class="paragraph">
+<p>Press the “<span class="image"><img src="img/image71.png" alt="img/image71" width="39" height="40"></span>” button to preview the graphics on the screen. “Up”, “Down”, “Left”, “Right” keys are used to move the axes. On the right are the “Follow Up” and “Follow Down” buttons. In jog mode, press the “<span class="image"><img src="img/image72.png" alt="img/image72" width="98" height="33"></span>’ to switch on the laser beam. Press the “<span class="image"><img src="img/image73.png" alt="1642043552(1)" width="57" height="31"></span>” button to set laser parameters of jog mode.</p>
+</div>
+<div class="paragraph">
+<p>CypCutE offers software limits function. In “Global parameters”, the function can be activated by selecting the “Enable software limits”option. This function is active by default.</p>
+</div>
+<div class="paragraph">
+<p>When the range of motion is detected by the system to be exceeding the preset limits, a message will be displayed to warn the user to stop moving the machine to avoid collision. Check the drawing board and make sure that the parts are inside the white boarder.</p>
+</div>
+<div class="paragraph">
+<p>The current position of the machine is monitored in real-time, the motor will be disabled if the machine is detected exceeding the software limits.</p>
+</div>
+<div class="paragraph">
+<p>Note: Software limit protection is dependant on correct coordinates. For this reason, each time the machine configuration is changed or the the machine is shut down due to abnormal conditions, the user must execute “Return origin” to calibrate the coordinates.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_2_return_origin">4.2 Return origin</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Click “<span class="image"><img src="img/image74.png" alt="img/image74" width="24" height="33"></span>” button in the CNC menu to move the coordinate axes back to the machine origin and re-establish the coordinate system. See section “Coordinate system” for details. Select “X Only” or “Y Only” to move the axis back to the origin individually. If “Z axis first” or “Auto-focus included” is selected, the corresponding referencing movement will be performed.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_3_coordinate_system">4.3 Coordinate system</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Modeling coordinate for designing and creating graphic is independent of the machine. The zero point is marked by “<span class="image"><img src="img/image75.png" alt="img/image75" width="42" height="30"></span>”. The coordinate system referenced in machining process and machine positions are shown as below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image76.png" alt="img/image76" width="314" height="202">
+</div>
+<div class="title">Figure 2. Figure 4- 9</div>
+</div>
+<div class="paragraph">
+<p>Click “Preview” on the console, the cutting head position in relation to the graphic will be displayed.</p>
+</div>
+<div class="sect2">
+<h3 id="_mechanical_coordinate_system">Mechanical coordinate system</h3>
+<div class="paragraph">
+<p>Mechanical coordinate system of the machine is defined by mechanism. Coordinate system is consistent after return origin “<span class="image"><img src="img/image77.png" alt="img/image77" width="26" height="34"></span>” is executed every time. Misalignment after installation or caused by abnormal conditions can also be reset by clicking this button.</p>
+</div>
+<div class="paragraph">
+<p>CypCutE defines coordinate system with the same rules no matter what mechanism is applied. If you stand in front of the cutting head, towards the right of the cutting head is X+ direction, towards the back of the laser head is Y+ direction, which means the the bottom left position is the minimal coordinate.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_programm_coordinate_system">Programm coordinate system</h3>
+<div class="paragraph">
+<p>Mechanical coordinate is consistent and CypCutE also adopts workpiece coordinate. Workpiece coordinate runs parallel with machine coordinate on X/Y direction but uses a different zero point called “Program 0 point”. Program coordinate systems are divided into floating coordinate system and workpiece coordinate system. Click “<span class="image"><img src="img/image78.jpeg" alt="\\srv62data1\users$\jiang.xue\Desktop\说明书\pics\浮动红.JPG" width="149" height="18"></span>” button above the console to select “Floating coordinate”, “Workpiece coordinate” or “External coordinate”. Floating coordinate is used in cutting samples or small quantity parts. Laser head will start processing from current position. The current position of the cutting head is automatically set as 0 point when the user executes “Frame”, “Dry run” or “Start”.</p>
+</div>
+<div class="paragraph">
+<p>If workpiece coordinate 1-9 is selected, the zero point is manually set by the user, and will only be changed with manual reset. Workpiece coordinate is suited for large quantity production. This will ensure the processing starts from the same position on the machine every time.</p>
+</div>
+<div class="paragraph">
+<p>Click the status bar “<span class="image"><img src="img/image79.png" alt="img/image79" width="100" height="16"></span>” at the bottom to select mechanical coordinate or program coordinate and specify the zero point of the coordinate. Select “Coordinate positioning” to move the cutting head to the specified coordinate position. For detailed information about determining zero point after interruption, see “CypCutE Laser Cutting Control Software User Manual V1.0”, section 4.1.3.</p>
+</div>
+<div class="paragraph">
+<p>Zero point should be re-determined after interruption.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_4_4_quick_start_of_cutting">4.4 Quick start of cutting</h2>
+<div class="sectionbody">
+<div class="sect2">
+<h3 id="_importing_files">Importing files</h3>
+<div class="paragraph">
+<p>Click “ <span class="image"><img src="img/image80.png" alt="img/image80" width="33" height="24"></span> “ button at the left top interface to open the file. Preview window of open file dialog box will help you quickly locate the file you need.</p>
+</div>
+<div class="paragraph">
+<p>You may also draw graphics with CypCutE software. Click “ <span class="image"><img src="img/image81.png" alt="img/image81" width="18" height="21"></span>” button, and then use functions on the left toolbar. See the relevant section for details.</p>
+</div>
+<div class="olist loweralpha">
+<ol class="loweralpha" type="a">
+<li>
+<p>AI/DXF/LXD etc. drawing formats are supported.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>b.Use “Import” in the menu to import files to the drawing board without deleting the exiting drawings in drawing board.</p>
+</div>
+<div class="paragraph">
+<p>To open an external file, click “Open”.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pre_processing">Pre-processing</h3>
+<div class="paragraph">
+<p>While importing graphics, CypCutE automatically removes minimal graphics and overlapping lines, merges unclosed lines, smooth the curves and sort the groups. Generally, you can start to set cutting parameters without other operations. If the automatic processing cannot meet your requirements, you can open the menu "File" - "User setting" to set the function options you need.</p>
+</div>
+<div class="paragraph">
+<p>Generally, the software considers that all the graphics to be processed should be closed. If you open a file containing non-closed graphics, a note message will appear in red color. But this function may be turned off. To view the unclosed graphics on the drawing board, you can click “<span class="image"><img src="img/image82.png" alt="img/image82" width="24" height="22"></span>” and “<span class="image"><img src="img/image83.png" alt="img/image83" width="21" height="25"></span>” under “View” button in “Home” menu to highlight the unclosed graphics; you can also select the unclosed grahics by clicking “Select” and “Select Open Figure”.</p>
+</div>
+<div class="paragraph">
+<p>If you need to split graphics manually, click “Break Line” under “Optimize” drop-down menu and click at the graphic position where you want to split. To merge graphics, select the graphics you want to merge and then click “Join Line” under “Optimize” drop-down menu.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cutting_technique">Cutting technique</h3>
+<div class="paragraph">
+<p>You may use most of the functions under "Technical Setting" column in the Home menu bar, including lead line setting and compensation, etc. The large button“Lead”can be used to set lead lines. Button“Seal”is used to set over-cut, gap, seal or multi-cut parameters. Button “Compensation” is used for kerf compensation. Button “Micro Joint” is used to inset uncut micro-joints in graphics. Button “Reverse” is used to reverse the machining direction of a single graphic selected. Button “Cooling Point” is used to set cooling point. Click “Start Point” button and point at any position on the graphic where you want the cutting to start to set it as a start point. If you point at a position outside the graphic, then a lead line is set from the the position to the graphic.</p>
+</div>
+<div class="paragraph">
+<p>Press Ctrl+A to select all graphics. Click "Lead" to set parameters and the program will set lead line on graphics automatically. Click "Lead" to open the drop-down menu and select "Check Leadline". The program will check for lead lines intersecting with the graphic or in wrong direction and optimize them.</p>
+</div>
+<div class="paragraph">
+<p>On the right toolbar, click “Layer” button to set detailed cutting parameters. The “Layer Parameter Settings” dialog box include basically all the parameters related to cutting performance.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_cutting_path_planning">Cutting path planning</h3>
+<div class="paragraph">
+<p>Set the cutting sequence of graphics as needed. Click “Sort” in “Home” or “Nest” column to set the cutting sequence of all graphics automatically. Open the drop-down menu and choose the sorting pattern to decide if processing direction is allowed to be changed by automatic sorting and identify the inner and outer contour of the part graphic.</p>
+</div>
+<div class="paragraph">
+<p>If automatic sorting does not meet the requirements, click “123” button to enter the manual sorting mode.Click the graphic with the mouse in sequence to set the processing order. Or press and hold the mouse to draw a line from one graphic to another to specify the order between the two diagrams.</p>
+</div>
+<div class="paragraph">
+<p>Select several graphics that have been sorted (set sequence) and click “Group” button in “Home” or “Nest” column to fix their order. Afterwards, the sequence within the group will not be changed with either automatic or manual sorting. The group will always handled as a single complete unit.</p>
+</div>
+<div class="paragraph">
+<p>Right click a group and select “Group Sort” to change the sequence of the graphics within the group.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pre_cutting_check">Pre-cutting check</h3>
+<div class="paragraph">
+<p>Check the processing path before cutting. Drag the progress bar to quickly view the graphic processing sequence. Click “Interactive preview button” so you can view the graphic processing order one by one.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image84.png" alt="img/image84" width="263" height="122">
+</div>
+<div class="title">Figure 3. Figure 4- 10</div>
+</div>
+<div class="paragraph">
+<p>Click “Simulate” button on the console to simulate processing. The “Simulate Speed” function on “CNC” page allows you to adjust the simulation speed.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image85.png" alt="img/image85" width="235" height="86">
+</div>
+<div class="title">Figure 4. Figure 4- 11</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_start_cutting">Start cutting</h3>
+<div class="paragraph">
+<p>Please note that a compatible control card and dongle are required to perform the actual processing.</p>
+</div>
+<div class="paragraph">
+<p>Before start processing, you have to check the relative position of the graphic to the working area. Click “<span class="image"><img src="img/image86.png" alt="img/image86" width="28" height="28"></span>” button on the left of the console to view the graphic position in relation to the working area. This relation is calculated by the position of the “Ref point” on the screen related to the laser head position at machine. On the screen are some common position marks used in our coordinate system. Click “Preview” and the “Ref point” will move the laser head position.</p>
+</div>
+<div class="paragraph">
+<p>If the laser head position indicated by the red cross does not match with the actual position of the laser head, please check if the machine origin is correct or not. If not, the machine origin can be corrected by selecting “CNC” and “Return”. If the graphic is partially or completely outside the white frame in Preview mode, it indicates that the travel range of the machine may be exceeded.</p>
+</div>
+<div class="paragraph">
+<p>Click “Ref point” at Home menu to change the “Ref point” position. For example, if the laser head is at the left bottom position of the graphic, set the the left bottom position as “Ref point” position.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image87.png" alt="img/image87" width="532" height="272">
+</div>
+<div class="title">Figure 5. Figure 4- 12</div>
+</div>
+<div class="paragraph">
+<p>After checking the position, click “<span class="image"><img src="img/image88.png" alt="img/image88" width="33" height="34"></span>” button on the console, the laser head will move along the outer rectangular frame of the graphic to be processed. This can be used to check if the machining area on the machine is right. Click “Generate Envelope” on the menu bar to generate the envelope. Then click “<span class="image"><img src="img/image89.png" alt="img/image89" width="33" height="33"></span>” button to check the positions of the remnant parts with irregular contours. Click “<span class="image"><img src="img/image90.png" alt="img/image90" width="39" height="38"></span>” button to move the cutting head along the entire cutting path with laser off and check for cutting issues that may occur in a more detailed way.，</p>
+</div>
+<div class="paragraph">
+<p>Execute the program. Click “<span class="image"><img src="img/image91.png" alt="img/image91" width="24" height="24"></span>” button to start processing. During the processing, a monitoring panel will be displayed as shown in the figure below, including parameters such as speed, power, follow height, focus, processing timing and processing file name etc. Click “<span class="image"><img src="img/image92.png" alt="img/image92" width="28" height="25"></span>” button to pause the processing. In pause status, you can manually move the laser head up and down, manually switch on/off the beam, gas etc. Click “<span class="image"><img src="img/image93.png" alt="img/image93" width="29" height="29"></span>” to resume processing.</p>
+</div>
+<div class="paragraph">
+<p>Click “<span class="image"><img src="img/image94.png" alt="img/image94" width="29" height="28"></span>” button to stop processing. The laser head will return to the pre-set position.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image95.png" alt="img/image95" width="553" height="60">
+</div>
+<div class="title">Figure 6. Figure 4- 13</div>
+</div>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+  <h3>Contents</h3>
+  <ul>
+    <li level="1">
+      <a href="#_4_1_manual_mode">4.1 Manual mode</a>
+    </li>
+    <li level="1">
+      <a href="#_4_2_return_origin">4.2 Return origin</a>
+    </li>
+    <li level="1">
+      <a href="#_4_3_coordinate_system">4.3 Coordinate system</a>
+    </li>
+    <li level="2">
+      <a href="#_mechanical_coordinate_system">Mechanical coordinate system</a>
+    </li>
+    <li level="2">
+      <a href="#_programm_coordinate_system">Programm coordinate system</a>
+    </li>
+    <li level="1">
+      <a href="#_4_4_quick_start_of_cutting">4.4 Quick start of cutting</a>
+    </li>
+    <li level="2">
+      <a href="#_importing_files">Importing files</a>
+    </li>
+    <li level="2">
+      <a href="#_pre_processing">Pre-processing</a>
+    </li>
+    <li level="2">
+      <a href="#_cutting_technique">Cutting technique</a>
+    </li>
+    <li level="2">
+      <a href="#_cutting_path_planning">Cutting path planning</a>
+    </li>
+    <li level="2">
+      <a href="#_pre_cutting_check">Pre-cutting check</a>
+    </li>
+    <li level="2">
+      <a href="#_start_cutting">Start cutting</a>
+    </li>
+  </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+  <span class="prev"><a href="switchingthemachineonandoff.html">Switching the machine on and off</a></span>
+  <span class="next"><a href="assistingfunctions.html">Assisting functions</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 by JJiangsu Jinfangyuan CNC Machine Co., Ltd .. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

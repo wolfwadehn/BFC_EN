@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Machine maintenance </title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>BFC Operator’s Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+  <ul>
+    <li><button class="tree blank"></button><a href="../index.html">JFY BFC CE</a></li>
+    <li><button class="tree blank"></button><a href="../index2.html">Foreword</a></li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter1safety/index.html">Chapter 1 Safety</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter1safety/safetyconcept.html">Safety concept</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/regulationsandguidelines.html">Regulations and guidelines</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/terms.html">Terms</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/laserclasses.html">Laser classes</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/operationalsafety.html">Operational safety</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/hazards.html">Hazards</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/measurestobetakenbythemanufacturer.html">Measures to be taken by the manufacturer</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/organizationalmeasurestakenbytheoperator.html">Organizational measures taken by the Operator</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/disassemblyanddisposal.html">Disassembly and disposal</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter2installationconditions/index.html">Chapter 2 Installation conditions</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/responsibilities.html">Responsibilities</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/workplanassistance.html">Work plan assistance</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/installationsite.html">Installation site</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/gassupply.html">Gas supply</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/electrics.html">Electrics</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/productionmaterials.html">Production materials</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/transport.html">Transport</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter3description/index.html">Chapter 3 Description</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter3description/importantcomponents.html">Important components</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/controlsystem.html">Control system</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/technicaldata.html">Technical data</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter4operation/index.html">Chapter 4 Operation</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter4operation/descriptionofoperatingelementsanddisplay.html">Description of operating elements and display</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/systeminterface.html">System interface</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/switchingthemachineonandoff.html">Switching the machine on and off</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/operationprocess.html">Operation process</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/assistingfunctions.html">Assisting functions</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/alarmandself-diagnosticfunctions.html">Alarm and self-diagnostic functions</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/alarmtracking.html">Alarm tracking</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/settingandadjustment.html">Setting and adjustment</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree open"></button>
+      <a href="index.html">Chapter 5 Maintenance</a>
+      <ul>
+        <li><button class="tree blank"></button><a href="maintenanceofthelaserdevice.html">Maintenance of the laser device</a></li>
+        <li><button class="tree blank"></button><a class="active" href="machinemaintenance.html">Machine maintenance </a></li>
+        <li><button class="tree blank"></button><a href="instructionofcuttingheadmaintenance.html">Instruction of cutting head maintenance</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter6basicsofcuttingtechnology/index.html">Chapter 6 Basics of Cutting Technology </a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/basictheoryoflasercutting.html">Basic theory of laser cutting</a></li>
+        <li><button class="tree blank"></button><a href="../chapter6basicsofcuttingtechnology/lasercuttingprocess.html">Laser cutting process</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter7appendix/index.html">Chapter 7 Appendix</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter7appendix/appendixa_analysisofcommoncuts.html">Appendix A: Analysis of common cuts</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter8noisemeasurement/index.html">Chapter 8 Noise Measurement</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingcontent.html">Testing content</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingresult.html">Testing result</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/machinelayout&measuringpoints.html">Machine layout & measuring points</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/comments.html">Comments</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+  <div>
+    <button>
+      <img src="../res/home.png">
+    </button>
+  </div>
+  <div>
+    <a href="index.html">Chapter 5 Maintenance</a>
+  </div>
+  <div>/</div>
+  <div>
+    <a href="machinemaintenance.html">Machine maintenance </a>
+  </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Machine maintenance </h1>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Maintenance is performed by the operator if the maintenance frequency is within 2 weeks, otherwise performed by the people have been trained.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_1_machine_lubrication">2.1 Machine lubrication</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Lubrication is primarily targeted for the transmission part of the machine. Z-axis guide rail and ball screw are lubricated by self-lubrication mechanism. The pinion and rack systems should be lubricated by central lubrication once a week, the grease type is 0# extreme pressure lithium base grease. The chain of the machine should be lubricated with grease once a month by people, the grease type is 46# grease.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_2_the_chain_of_the_machine">2.2 The chain of the machine</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>The chain of the machine should be inspected every 6 months. Re-tighten the chain if it’s found to be loose. Tightening procedures: Loosen the screws on the installation plate of the chain wheel. Adjust the chain wheel to a proper position with the adjustment screw of the chain wheel. Tighten the nuts on the installation plate of the chain wheel after adjustment.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image131.png" alt="img/image131" width="346" height="288">
+</div>
+<div class="title">Figure 1. Figure 5- 1</div>
+</div>
+<div class="paragraph">
+<p>Adjustment screw of the chain wheel</p>
+</div>
+<div class="paragraph">
+<p>Screw on the chain wheel installation plate</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_3_inspecting_the_cooling_water_circuit">2.3 Inspecting the cooling water circuit</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Make sure that the distilled water is used for cooling water of the process chillers. Otherwise, the service life of the laser device and lens will be affected. Replace the water every two months. Otherwise, the flow rate will be affected by the change in water quality. Outlet pressure of the cooling water should be set to 0.4Mpa ~ 0.5Mpa. Cooling water temperature of the external light path is normally set to 28℃. Cooling water temperature of the laser device is normally set to 26℃ (in winter) and 26℃ (in summer). Fluctuation range of the water temperature is ±1℃. In case of a high cooling water temperature in the external light path, setting temperature of cooling water should be increased appropriately to prevent condensation on the lens, which will affect the service life of the lens.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image132.png" alt="img/image132" width="553" height="185">
+</div>
+<div class="title">Figure 2. Figure 5- 2</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Before switching on the process cooler, check the cooling water level. The process cooler has an automatic protection function when the water level is too low. In this case, please add distill water before switching on the machine.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Check if the supply valve and return valve are open before switching on the machine to prevent the burst of the water pipes due to high pressure.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>If the ambient temperature is below 0 ℃ and the machine is not operated for over 24 hours. Empty the water tank to prevent water freezing in the tank or piping and damage to the laser device or process coolers.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Do not leave the side cover of the process cooler for a long time. This may affect the cooling effect.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Clean the filter on the side of the process cooler every two week to maintain the cooling effect.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Cooling water and filter element should be replaced every two month. Otherwise, the flow rate will be affected by the change in water quality.</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_4_draining_the_process_cooler_and_laser_device">2.4 Draining the process cooler and laser device</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In areas with a long-term subfreezing temperature, if the machine is not operated (e.g. long holidays) for a long period, empty all the water in the process cooler and laser device to avoid frozen internal water circuit.</p>
+</div>
+<div class="paragraph">
+<p>Follow the steps below to empty the water in process cooler and laser device:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Open the valve on water inlet “IN” and water outlet “OUT” and allow the water to flow freely.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>When the water flow stops, connect compressed air to water inlet “IN”. At the same time, the water outlet “OUT” should remain opened.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Increase the air pressure from 0.1MPa to 0.2MPa slowly. Keep blowing for 5 minutes. Notes: Do no increase the air pressure sharply.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Increase the air pressure from 0.3MPa to 0.4MPa slowly. Keep blowing for 10 minutes. Notes: Do no increase the air pressure sharply.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Connect compressed air to water outlet “OUT” and open water inlet “IN”. Repeat step 3 and 4 as mentioned above.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>After emptying the water, connect the plugs to water inlet “IN” and water outlet “OUT”.</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_2_5_removing_dust_from_electrical_cabinet">2.5 Removing dust from electrical cabinet</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Due to the large amount of metal dust generated during laser processing, it’s recommended to remove the dust in the electrical cabinet of the laser cutting machine regularly (once a month).The working condition of cooling fan should also be checked to avoid problems caused by dust buildup such as overheating, short circuit, malfunction and premature failure of the components etc.</p>
+</div>
+<div class="paragraph">
+<p>Follow the instructions below when removing the dust from the electrical cabinet:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Clean the cooling fan and dust filter mat of the electrical cabinet regularly.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Use a rechargeable vacuum clean with a small intake port suitable for removing dust from electrical components and electrical racks.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Blow off the dust with a soft bristle and air box.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Get rid of the dust while it’s still easy to do so rather than wait until the dust builds up. Keep the electrical cabinet clean to avoid the malfunctions.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Note：</p>
+</div>
+<div class="paragraph">
+<p>Please turn off the power before opening the electrical cabinet.</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+  <h3>Contents</h3>
+  <ul>
+    <li level="1">
+      <a href="#_2_1_machine_lubrication">2.1 Machine lubrication</a>
+    </li>
+    <li level="1">
+      <a href="#_2_2_the_chain_of_the_machine">2.2 The chain of the machine</a>
+    </li>
+    <li level="1">
+      <a href="#_2_3_inspecting_the_cooling_water_circuit">2.3 Inspecting the cooling water circuit</a>
+    </li>
+    <li level="1">
+      <a href="#_2_4_draining_the_process_cooler_and_laser_device">2.4 Draining the process cooler and laser device</a>
+    </li>
+    <li level="1">
+      <a href="#_2_5_removing_dust_from_electrical_cabinet">2.5 Removing dust from electrical cabinet</a>
+    </li>
+  </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+  <span class="prev"><a href="maintenanceofthelaserdevice.html">Maintenance of the laser device</a></span>
+  <span class="next"><a href="instructionofcuttingheadmaintenance.html">Instruction of cutting head maintenance</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 by JJiangsu Jinfangyuan CNC Machine Co., Ltd .. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

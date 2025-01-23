@@ -1,0 +1,104 @@
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_8_1_error_measure">8.1 Error measure</a></li>
+<li><a href="#_8_2_focus_position">8.2 Focus position</a></li>
+<li><a href="#_8_3_co_axial_alignment_of_the_cutting_nozzle_and_the_laser_device">8.3 Co-axial alignment of the cutting nozzle and the laser device</a>
+<ul class="sectlevel2">
+<li><a href="#_lc_m_series_cutting_head">LC-m series cutting head</a></li>
+<li><a href="#_pc_series_cutting_head">PC series cutting head</a></li>
+</ul>
+</li>
+</ul>
+</div>
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph">
+<p>Settings of the laser cutting control software</p>
+</div>
+<div class="paragraph">
+<p>Open FRIENDESS software to set up machine, laser device, servo proportional valve and various alarm parameters (See FRIENDESS Laser Cutting Control Software User Manual for details).</p>
+</div>
+<div class="paragraph">
+<p>“User Setting” is used to set parameters in relation to user habits. The “Backup” is used to back up all parameters in a compressed file for easy recovery. “BCS100 monitoring interface” is used to monitor and display the BCS100 height controller interface. BCS100 follow controller can perform a series of operation including return origin, follow, locate and one-key calibration etc. “Diagnostic window” is used to diagnose and monitor the software.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_8_1_error_measure">8.1 Error measure</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Click the “<span class="image"><img src="img/image125.png" alt="img/image125" width="41" height="50"></span>” button to move the cutting head in dry run mode along the graphic to be processed. When the dry run is finished, a blue dashed line will be displayed to show the feedback path of the servo motor. The process parameters of the actual cutting can be adjusted according to this path.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_8_2_focus_position">8.2 Focus position</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>For cutting on different materials, the focus position needs to be adjusted according to various cutting process requirements. When the focus position parameters are decided, the +/- direction of the focus position needs to be considered. The focus position on the sheet surface is defined as zero position. Any focus positions below the sheet surface are defined as negative positions. Any focus positions above the sheet surface are defined as positive positions. As shown below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image126.png" alt="img/image126" width="328" height="217">
+</div>
+<div class="title">Figure 1. Figure 4- 25</div>
+</div>
+<div class="paragraph">
+<p>BFC CNC laser cutting machine can be configured with LC-M series and PC series cutting head with auto focusing system. For initial setting, replacement of lens or laser device, the focus position must be set manually again.</p>
+</div>
+<div class="paragraph">
+<p>Follow the steps below to set focus position manually:</p>
+</div>
+<div class="paragraph">
+<p>1.Set the focus position to upper limit position and the laser power to 80-100w.</p>
+</div>
+<div class="paragraph">
+<p>2.Move the masking tape by no more than 0.5mm each time. Ignite the beam to shot a hole (the smaller the hole, the better).</p>
+</div>
+<div class="paragraph">
+<p>3.After several shots, find the smallest hole. The focus position of the smallest hole is the zero focus position. At this position, the focus in on the tip of the nozzle.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_8_3_co_axial_alignment_of_the_cutting_nozzle_and_the_laser_device">8.3 Co-axial alignment of the cutting nozzle and the laser device</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In laser cutting, different nozzle diameters are required for use on different sheet materials and thicknesses. The nozzle should be replaced according to the specific requirements. After nozzle replacement and focus adjustment, it must be ensured that the cutting nozzle is coaxial with the focused laser beam. Otherwise, it’s easy to cause damage to the nozzle or even to the machine.</p>
+</div>
+<div class="paragraph">
+<p>1、Mark the nozzle tip with a red marker pen and attach the masking tape (or scotch tape) to the nozzle.</p>
+</div>
+<div class="paragraph">
+<p>2、Execute [Auto] <span class="image"><img src="img/image127.png" alt="img/image127" width="43" height="42"></span> mode. Check the position of the hole.</p>
+</div>
+<div class="paragraph">
+<p>3、If the hole is not centered relative to the nozzle orifice, turn the adjusting screw A and B for alignment.</p>
+</div>
+<div class="paragraph">
+<p>4、Repeat steps 1-3 until the hole is centered to the nozzle orifice.</p>
+</div>
+<div class="paragraph">
+<p>Figure 4- 26</p>
+</div>
+<div class="sect2">
+<h3 id="_lc_m_series_cutting_head">LC-m series cutting head</h3>
+<div class="imageblock">
+<div class="content">
+<img src="img/image129.png" alt="img/image129" width="405" height="365">
+</div>
+<div class="title">Figure 2. Figure 4- 27</div>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_pc_series_cutting_head">PC series cutting head</h3>
+<div class="paragraph">
+<p>Figure 4- 28</p>
+</div>
+<div class="paragraph">
+<p><span class="image"><img src="img/image130.png" alt="img/image130" width="399" height="338"></span></p>
+</div>
+</div>
+</div>
+</div>

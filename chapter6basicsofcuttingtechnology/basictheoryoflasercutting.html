@@ -1,0 +1,290 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Encode+Sans+Semi+Condensed:wght@400;600&family=Nunito+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Roboto+Mono:ital,wght@0,400;0,600;1,400;1,600&display=block" rel="stylesheet">
+  <link rel="stylesheet" href="../res/bento.css">
+  <link rel="stylesheet" href="../res/site.css">
+  <link rel="stylesheet" href="../res/tree.css">
+  <link rel="stylesheet" href="../res/sibling.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Basic theory of laser cutting</title>
+</head>
+<body id="site-body" onload="sLoaded()">
+    <header id="site-header">
+        <div id="header-logo"><img src="../img/logo.png" width="123" height="50" /></div>
+        <div><p>BFC Operator’s Manual</p></div>
+    </header>
+    <div id="site-main">
+        <nav id="site-nav">
+            <div class="treesite">
+  <ul>
+    <li><button class="tree blank"></button><a href="../index.html">JFY BFC CE</a></li>
+    <li><button class="tree blank"></button><a href="../index2.html">Foreword</a></li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter1safety/index.html">Chapter 1 Safety</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter1safety/safetyconcept.html">Safety concept</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/regulationsandguidelines.html">Regulations and guidelines</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/terms.html">Terms</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/laserclasses.html">Laser classes</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/operationalsafety.html">Operational safety</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/hazards.html">Hazards</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/measurestobetakenbythemanufacturer.html">Measures to be taken by the manufacturer</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/organizationalmeasurestakenbytheoperator.html">Organizational measures taken by the Operator</a></li>
+        <li><button class="tree blank"></button><a href="../chapter1safety/disassemblyanddisposal.html">Disassembly and disposal</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter2installationconditions/index.html">Chapter 2 Installation conditions</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/responsibilities.html">Responsibilities</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/workplanassistance.html">Work plan assistance</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/installationsite.html">Installation site</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/gassupply.html">Gas supply</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/electrics.html">Electrics</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/productionmaterials.html">Production materials</a></li>
+        <li><button class="tree blank"></button><a href="../chapter2installationconditions/transport.html">Transport</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter3description/index.html">Chapter 3 Description</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter3description/importantcomponents.html">Important components</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/controlsystem.html">Control system</a></li>
+        <li><button class="tree blank"></button><a href="../chapter3description/technicaldata.html">Technical data</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter4operation/index.html">Chapter 4 Operation</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter4operation/descriptionofoperatingelementsanddisplay.html">Description of operating elements and display</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/systeminterface.html">System interface</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/switchingthemachineonandoff.html">Switching the machine on and off</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/operationprocess.html">Operation process</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/assistingfunctions.html">Assisting functions</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/alarmandself-diagnosticfunctions.html">Alarm and self-diagnostic functions</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/alarmtracking.html">Alarm tracking</a></li>
+        <li><button class="tree blank"></button><a href="../chapter4operation/settingandadjustment.html">Setting and adjustment</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter5maintenance/index.html">Chapter 5 Maintenance</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/maintenanceofthelaserdevice.html">Maintenance of the laser device</a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/machinemaintenance.html">Machine maintenance </a></li>
+        <li><button class="tree blank"></button><a href="../chapter5maintenance/instructionofcuttingheadmaintenance.html">Instruction of cutting head maintenance</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree open"></button>
+      <a href="index.html">Chapter 6 Basics of Cutting Technology </a>
+      <ul>
+        <li><button class="tree blank"></button><a class="active" href="basictheoryoflasercutting.html">Basic theory of laser cutting</a></li>
+        <li><button class="tree blank"></button><a href="lasercuttingprocess.html">Laser cutting process</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter7appendix/index.html">Chapter 7 Appendix</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter7appendix/appendixa_analysisofcommoncuts.html">Appendix A: Analysis of common cuts</a></li>
+      </ul>
+    </li>
+    <li>
+      <button class="tree closed"></button>
+      <a href="../chapter8noisemeasurement/index.html">Chapter 8 Noise Measurement</a>
+      <ul class="hide">
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingcontent.html">Testing content</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/testingresult.html">Testing result</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/machinelayout&measuringpoints.html">Machine layout & measuring points</a></li>
+        <li><button class="tree blank"></button><a href="../chapter8noisemeasurement/comments.html">Comments</a></li>
+      </ul>
+    </li>
+  </ul>
+</div>
+
+        </nav>
+        <div id="site-nav-right">
+            <nav id="site-crumb">
+  <div>
+    <button>
+      <img src="../res/home.png">
+    </button>
+  </div>
+  <div>
+    <a href="index.html">Chapter 6 Basics of Cutting Technology </a>
+  </div>
+  <div>/</div>
+  <div>
+    <a href="basictheoryoflasercutting.html">Basic theory of laser cutting</a>
+  </div>
+</nav>
+
+            <div id="site-crumb-below">
+                <div id="site-toc-left">
+                    <article id="article">
+                        <h1>Basic theory of laser cutting</h1>
+<div class="sect1">
+<h2 id="_1_1_overview_of_laser_cutting">1.1 Overview of laser cutting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Laser cutting refers to the thermal cutting method that separates material by using focused laser beam with high power density to melt, vaporize, ablate and ignite the workpiece material, and blowing away the molten material with high speed gas flow running co-axially with the laser beam.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_2_types_of_laser_cutting">1.2 Types of laser cutting</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>According to the different thermal-physical manifestations of cutting materials and assist gases, laser cutting can be roughly divided into:</p>
+</div>
+<div class="sect2">
+<h3 id="_laser_fusion_cutting">Laser fusion cutting</h3>
+<div class="paragraph">
+<p>During fusion cutting process, the workpiece metal is heated and molten, causing the material change from solid to liquid, and blown out by the high-pressure inert gas (typically nitrogen).</p>
+</div>
+<div class="paragraph">
+<p>The speed of laser cutting is basically proportional to the laser power of the machine. Therefore, faster cutting speed can be obtained by increasing the laser power.</p>
+</div>
+<div class="paragraph">
+<p>Laser fusion cutting is suitable for processing materials such as non-iron oxide metals and their alloys(e.g. stainless steel, stainless iron and titanium alloy).</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_laser_oxygen_assisted_cutting">Laser oxygen-assisted cutting</h3>
+<div class="paragraph">
+<p>Unlike fusion cutting, oxygen-assisted cutting uses oxygen as an assist gas. The chemical reaction occurs between the oxygen and the metallic iron heated by the laser beam, releasing heat constantly to keep the heating and combustion of the metallic iron continuing. At the same time, the molten liquefied metal is blown away by the oxygen and the separation of the material is completed. The cut edge quality with this cutting method is less good than that of the fusion cutting. With thicker sheet material, the kerf gets wider, the cut edge gets rougher and heat-affected zone gets deeper.</p>
+</div>
+<div class="paragraph">
+<p>In laser oxygen-assisted cutting, the three most important factors are laser power, cutting speed and oxygen pressure, which interact with each other and jointly affect the cutting quality.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="_laser_vaporization_cutting">Laser vaporization cutting</h3>
+<div class="paragraph">
+<p>In laser vaporization cutting, the material is instantaneously heated to a vaporized state by the laser. Therefore, a very high laser power is required and the permissible thickness of the sheet is limited. Typically, the sheet thickness should not exceed the diameter of the focused beam.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_1_3_operating_mode_of_the_laser_device">1.3 Operating mode of the laser device</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>In laser cutting, there are two operating modes: Pulse mode and continuous wave mode</p>
+</div>
+<div class="paragraph">
+<p>In continuous wave mode, the output power remains constant. In pulse mode, the output power is alternately on and off in cycles. In addition, the power of the continuous wave mode is concentrated and uninterrupted while the pulse mode power is distributed and thus significantly lower the thermal effect on the sheet.</p>
+</div>
+<div class="paragraph">
+<p>Generally, continuous mode is used for large contour cutting; pulsing mode is used for piercing, sharp corner and small contour cutting to avoid over-burn of the sheet material.</p>
+</div>
+<div class="paragraph">
+<p>Main working parameters of pulse mode include: peak power, frequency and duty cycle. In fact, the continuous wave mode is a special case of the pulse mode when the duty cycle is 100%.</p>
+</div>
+<div class="paragraph">
+<p>Laser power (P)</p>
+</div>
+<div class="paragraph">
+<p>Average power</p>
+</div>
+<div class="paragraph">
+<p>Ts Time (t)</p>
+</div>
+<div class="paragraph">
+<p>Frequency is the number of cycles per second, measured in Hz.</p>
+</div>
+<div class="paragraph">
+<p>Here, duty cycle is the ratio of the amount of time with output power to the total time in a given period. It’s expressed as a percentage value.</p>
+</div>
+<div class="paragraph">
+<p>frequency = duty cycle =</p>
+</div>
+<div class="paragraph">
+<p>The higher the pulse duty cycle, the higher the average power will be. The laser operates in continuous wave mode when the duty cycle is 100%.</p>
+</div>
+<div class="paragraph">
+<p>Average power Average power</p>
+</div>
+<div class="paragraph">
+<p>Duty cycle： 80% Duty cycle： 100%</p>
+</div>
+<div class="paragraph">
+<p>With the same duty cycle, the average powers between different frequencies are basically equal.</p>
+</div>
+<div class="paragraph">
+<p>Average power Average power</p>
+</div>
+</div>
+</div>
+
+                    </article>
+                </div>
+                <div id="site-toc-holder">
+                    <aside id="site-toc">
+  <h3>Contents</h3>
+  <ul>
+    <li level="1">
+      <a href="#_1_1_overview_of_laser_cutting">1.1 Overview of laser cutting</a>
+    </li>
+    <li level="1">
+      <a href="#_1_2_types_of_laser_cutting">1.2 Types of laser cutting</a>
+    </li>
+    <li level="2">
+      <a href="#_laser_fusion_cutting">Laser fusion cutting</a>
+    </li>
+    <li level="2">
+      <a href="#_laser_oxygen_assisted_cutting">Laser oxygen-assisted cutting</a>
+    </li>
+    <li level="2">
+      <a href="#_laser_vaporization_cutting">Laser vaporization cutting</a>
+    </li>
+    <li level="1">
+      <a href="#_1_3_operating_mode_of_the_laser_device">1.3 Operating mode of the laser device</a>
+    </li>
+  </ul>
+</aside>
+
+                </div>
+            </div>
+            <nav class="pagination">
+  <span class="prev"><a href="index.html">Chapter 6 Basics of Cutting Technology </a></span>
+  <span class="next"><a href="lasercuttingprocess.html">Laser cutting process</a></span>
+</nav>
+
+        </div>
+        <div id="searchbox">
+          <input id="searchinput" type="search" placeholder="Search... (Key: F)" autocomplete="false" size="30" />
+          <ul id="results"></ul>
+        </div>
+    </div>
+    <footer id="site-footer">
+        <div class="left">
+            <p>&nbsp;&nbsp;Copyright &copy; 2025 by JJiangsu Jinfangyuan CNC Machine Co., Ltd .. All rights reserved.</p>
+        </div>
+        <div class="middle"></div>
+        <div class="right">
+            <p>Compiled by Bento</p>
+            <img src="../res/bento.png" />
+        </div>
+    </footer>
+    <script>
+        // The baseLevel is used to assign the search result pages.
+        var baseLevel = "../res".replace("res", "");
+    </script>
+    <script src="https://unpkg.com/lunr/lunr.js"></script>
+    <script src="../res/index.js"></script>
+    <script src="../res/files.js"></script>
+    <script src="../res/site.js"></script>
+
+    
+</body>
+</html>

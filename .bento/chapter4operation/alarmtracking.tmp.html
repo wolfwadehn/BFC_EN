@@ -1,0 +1,810 @@
+<div id="toc" class="toc">
+<div id="toctitle">Table of Contents</div>
+<ul class="sectlevel1">
+<li><a href="#_7_1_machine_alarm">7.1 Machine alarm</a></li>
+<li><a href="#_3_2_laser_alarm_and_warning">3.2 Laser alarm and warning</a></li>
+<li><a href="#_3_3_process_cooler_alarms_and_removal_of_alarms">3.3 Process cooler alarms and removal of alarms</a></li>
+</ul>
+</div>
+<div class="sect1">
+<h2 id="_7_1_machine_alarm">7.1 Machine alarm</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>CypCutE monitors all components when the machine is operating. Once an alarm is detected, it will be displayed on title bar in a red background and actions will be taken, e.g. the machine will be stopped. Motion operations will be disabled until the alarm is cleared. Check the machine and operate only after the warning and error messages are cleared. An example of alarm is shown as below:</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image122.png" alt="img/image122" width="553" height="86">
+</div>
+<div class="title">Figure 1. Figure 4- 22</div>
+</div>
+<div class="paragraph">
+<p>Besides the title bar, the “Alarm” window at the screen bottom will also display the alarm message. After the alarm source is cleared, the alarm title will disappear but alarm message in alarm window will be saved. Double click “System” window to check all history records and software events.</p>
+</div>
+<div class="paragraph">
+<p>In addition to alarm messages, when other abnormal conditions are detected by CypCutE, they will be displayed in “System” window in different colors depending on the level of severity including warning, notice and message. These messages will not stop machine operation but attention to various messages are still recommended so that necessary measures can be taken as soon as possible.</p>
+</div>
+<div class="paragraph">
+<p>Alarms can be reset or cleared manually. Go to “Process”- “Global parameters” to check all the alarms that need to be cleared manually.</p>
+</div>
+<div class="paragraph">
+<p>Below are restrictions once alarms are activated:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Disable servo when emergency stop alarm is activated (to prevent accidental motion)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Disable X/Y motion functions when BCS100 alarm is detected (Z axis condition is unknown under this status, but there might be collision if X/Y axis moves)</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Disable Z axis motion when emergency stop alarm is activated (in complete stop status).</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Disable dry run and jog when Z-axis lower limit alarm is detected (to prevent collision as stated above ).</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>If the height controller alarm is detected, the“Allow axis motion” button must be pressed manually to move the axes.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Use instruction: (Required software version: CypCut V731 and above)</p>
+</div>
+<div class="paragraph">
+<p>1. Go to “Platform configuration tool” -“Warning configuration”, tick the options “Axis Movement is Allowed after Confirming Height Controller Alarm” and “All Alarms shall be Cleared manually” and save.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image123.png" alt="img/image123" width="516" height="117">
+</div>
+<div class="title">Figure 2. Figure 4- 23</div>
+</div>
+<div class="paragraph">
+<p>2. When the height controller alarm is detected, “Allow axis movement” and “Alarm reset” buttons will appear on the bottom right corner. The machine can only be operated to move after “Allow axis movement”button is pressed.</p>
+</div>
+<div class="imageblock">
+<div class="content">
+<img src="img/image124.png" alt="img/image124" width="509" height="95">
+</div>
+<div class="title">Figure 3. Figure 4- 24</div>
+</div>
+<div class="paragraph">
+<p>Part of the alarm messages are listed below:</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 1. Table 4- 5</caption>
+<colgroup>
+<col style="width: 23%;">
+<col style="width: 34%;">
+<col style="width: 43%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Faults</th>
+<th class="tableblock halign-left valign-top">Possible cause</th>
+<th class="tableblock halign-left valign-top">Solution</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">EMERGENCY STOP</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.E-stop is pressed.</p>
+</div>
+<div class="paragraph">
+<p>2.Signal failure of the E-stop safety circuit.</p>
+</div>
+<div class="paragraph">
+<p>3.After the E-stop is released, safety relay KA100 is not reset.</p>
+</div>
+<div class="paragraph">
+<p>4.Failure of safety relay KA100.</p>
+</div>
+<div class="paragraph">
+<p>1.Check if the E-stop is activated.</p>
+</div>
+<div class="paragraph">
+<p>2.Check components and wiring of the E-stop safety circuit.</p>
+</div>
+<div class="paragraph">
+<p>3.Try to release the E-stop. If the E-stop cannot be release, check the components and wiring of the reset circuit,</p>
+</div>
+<div class="paragraph">
+<p>4.Replace safety relay.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Emergency stop of pallet changer</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.Safety door is not locked.</p>
+</div>
+<div class="paragraph">
+<p>2.Failure of safety door lock power supply.</p>
+</div>
+<div class="paragraph">
+<p>3.Safety door is locked but the safety relay KA200 cannot be auto-reset.</p>
+</div>
+<div class="paragraph">
+<p>4.Failure of safety relay KA200.</p>
+</div>
+<div class="paragraph">
+<p>1.Lock the safety door.</p>
+</div>
+<div class="paragraph">
+<p>2.Check for the power supply of safety door lock.</p>
+</div>
+<div class="paragraph">
+<p>3.Check components and wiring of the door lock monitoring circuit and safety relay auto-reset circuit.</p>
+</div>
+<div class="paragraph">
+<p>4.Replace safety relay</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">“Pallet at position” signal is not detected</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.Pallet is not in correct position.</p>
+</div>
+<div class="paragraph">
+<p>2.Failure of “Pallet stop” signal transmission</p>
+</div>
+<div class="paragraph">
+<p>3. Defective limit switch of the pallet changer.</p>
+</div>
+<div class="paragraph">
+<p>1.Move pallet until the correct position is reached.</p>
+</div>
+<div class="paragraph">
+<p>2.Check “Pallet stop” signal cable and connector</p>
+</div>
+<div class="paragraph">
+<p>3.Replace limit switch of the pallet changer.</p>
+</div>
+<div class="paragraph">
+<p>X +limit</p>
+</div>
+<div class="paragraph">
+<p>X -limit</p>
+</div>
+<div class="paragraph">
+<p>Y +limit</p>
+</div>
+<div class="paragraph">
+<p>Y -limit</p>
+</div>
+<div class="paragraph">
+<p>Z upper limit</p>
+</div>
+<div class="paragraph">
+<p>Z lower limit</p>
+</div>
+<div class="paragraph">
+<p>1.Motion axis is out of travel range.</p>
+</div>
+<div class="paragraph">
+<p>2.Limit switch is blocked by objects.</p>
+</div>
+<div class="paragraph">
+<p>3.Switch sensor is defective.</p>
+</div>
+<div class="paragraph">
+<p>1.Move back the axis, reset</p>
+</div>
+<div class="paragraph">
+<p>2.Remove the object</p>
+</div>
+<div class="paragraph">
+<p>3.Replace switch sensor</p>
+</div>
+<div class="paragraph">
+<p>Gas alarm: Oxygen</p>
+</div>
+<div class="paragraph">
+<p>Gas alarm: Air</p>
+</div>
+<div class="paragraph">
+<p>Gas alarm: Nitrogen</p>
+</div>
+<div class="paragraph">
+<p>1.Assist gas pressure is out of preset range.</p>
+</div>
+<div class="paragraph">
+<p>2.Fault with gas pressure signal transmission.</p>
+</div>
+<div class="paragraph">
+<p>3.Assist gas pressure sensor is defective.</p>
+</div>
+<div class="paragraph">
+<p>1.Check if the gas supply is within the pressure range.</p>
+</div>
+<div class="paragraph">
+<p>2.Check the signal cable and connector.</p>
+</div>
+<div class="paragraph">
+<p>3.Replace pressure sensor.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Laser device alarm</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alarm on laser device.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Start up the laser device monitoring software to check the alarm message. Troubleshooting with the tip message.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Process cooler fault</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fault with process cooler.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">See “Process cooler faults and troubleshooting” for details</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Electrical cabinet door alarm</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.Electrical cabinet door is opened.</p>
+</div>
+<div class="paragraph">
+<p>2.Failure of signal transmission of the electrical cabinet door</p>
+</div>
+<div class="paragraph">
+<p>3.Failure of sensor switch of the electrical cabinet door</p>
+</div>
+<div class="paragraph">
+<p>1.Close electrical cabinet door.</p>
+</div>
+<div class="paragraph">
+<p>2.Check the signal cable and connector.</p>
+</div>
+<div class="paragraph">
+<p>3.Replace sensor switch of the the electrical cabinet door</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Safety door not closed</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.Safety door is not locked.</p>
+</div>
+<div class="paragraph">
+<p>2.Failure of power supply of the safety door lock.</p>
+</div>
+<div class="paragraph">
+<p>3.Safety door is locked but the safety relay KA200 cannot be auto-reset.</p>
+</div>
+<div class="paragraph">
+<p>4.Defective safety door lock.</p>
+</div>
+<div class="paragraph">
+<p>1.Close and lock the safety door.</p>
+</div>
+<div class="paragraph">
+<p>2.Check the power supply of the safety door lock,</p>
+</div>
+<div class="paragraph">
+<p>3.Check components and wiring of the door lock monitoring circuit and safety relay auto-reset circuit.</p>
+</div>
+<div class="paragraph">
+<p>4.Replace safety door lock.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cutting head fault</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Faulty with cutting head.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Troubleshooting according to the indicated status (LED indicator) using manual</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Air pressure (valve) alarm</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.Gas supply (valve) is out of preset range.</p>
+</div>
+<div class="paragraph">
+<p>2.Fault with air pressure signal cable.</p>
+</div>
+<div class="paragraph">
+<p>3.Defective air pressure sensor.</p>
+</div>
+<div class="paragraph">
+<p>1.Check if the gas supply is within the pressure range,</p>
+</div>
+<div class="paragraph">
+<p>2.Check the signal cable and connector.</p>
+</div>
+<div class="paragraph">
+<p>3.Replace pressure sensor.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Laser device warning</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alarm on laser device,</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Start up the laser device monitoring software to check the alarm message. Troubleshooting with the tip message.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Pallet door not closed</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.Back pallet door is not in correct position.</p>
+</div>
+<div class="paragraph">
+<p>2.Fault with safety monitoring signal transmission</p>
+</div>
+<div class="paragraph">
+<p>3.Safety relay KA400 cannot be auto-reset.</p>
+</div>
+<div class="paragraph">
+<p>4.Defective safety relay KA400.</p>
+</div>
+<div class="paragraph">
+<p>5.Safety-monitoring sensor of the pallet door is defective,</p>
+</div>
+<div class="paragraph">
+<p>1.Check if the pallet door is stuck or if gas supply pressure is insufficient</p>
+</div>
+<div class="paragraph">
+<p>2.Check signal cable and connector.</p>
+</div>
+<div class="paragraph">
+<p>3.Check components and wiring of the safety relay auto-reset circuit,</p>
+</div>
+<div class="paragraph">
+<p>4.Replace safety relay.</p>
+</div>
+<div class="paragraph">
+<p>5.Replace safety-monitoring sensor.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Safety light curtain to be acknowledged</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_2_laser_alarm_and_warning">3.2 Laser alarm and warning</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When an alarm signal of the laser device is triggered, open the laser monitoring software to check the details of the alarm or warning message.</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>If an alarm is detected from the core modules of the laser device, the laser device will be switched off and the electrical system of the laser device wil be tripped. At the same time, the red LED (fault) indicator will keep flashing.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>Causes of the alarms are:</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Optical faults</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>High back-reflection is detected.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Over-temperature of internal components of the laser device.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Core modules of the laser device are not in switch-off status when switch cabinet electrical system detects abnormal conditions or the safety circuit is interrupted.</pre>
+</div>
+</div>
+<div class="paragraph">
+<p>In case of any optical fault, the laser device will enter the safe mode. In this mode, the laser device is operated under restrictions with a set of pre-configured parameters. The laser device outputs low energy and low-frequency pulses to allow troubleshooting without causing further damage. Troubleshooting of optical faults requires high sensitivity, fast speed and minimal damage to the laser device. However, there is possibility that the optical monitoring system may go wrong and report a false optical fault. In this case, the safe mode can be turned off with the safe mode reset program.</p>
+</div>
+<div class="paragraph">
+<p>Warning</p>
+</div>
+<div class="paragraph">
+<p>The laser device will trigger warnings in certain circumstances. Currently, the red LED will be illuminated but the laser device will not be switched off. When the source of the warning is cleared, the laser device will reset the warning automatically.</p>
+</div>
+<div class="paragraph">
+<p>Warning conditions are</p>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Back reflection is close to the warning limit.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Temperature is closed to warning limit</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Laser device is in safe mode.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>Electrical system is not reset.</pre>
+</div>
+</div>
+<div class="literalblock">
+<div class="content">
+<pre>The laser head is not inserted into the machining head.</pre>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="_3_3_process_cooler_alarms_and_removal_of_alarms">3.3 Process cooler alarms and removal of alarms</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>When an process cooler error is detected, the temperature and the error code Exx will display alternately. In case of multiple errors, press the four navigation keys to view different error codes. The the error code is selected, it will stay for 5s before the temperature and error code alternately display again.</p>
+</div>
+<div class="paragraph">
+<p>The error codes and descriptions are listed below：</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 2. Table 4- 6</caption>
+<colgroup>
+<col style="width: 32%;">
+<col style="width: 35%;">
+<col style="width: 33%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Error</th>
+<th class="tableblock halign-left valign-top">Possible cause</th>
+<th class="tableblock halign-left valign-top">Solution
+
+Display『00』：
+
+Wrong phase sequence, please correct the phase sequence.
+
+1.Wrong phase sequence.
+
+2.Missing phase.
+
+3.Imbalanced three phases.
+
+4.Damaged phase sequence relay.
+
+1.Swap any two lines.
+
+2.Check the power supply circuit.
+
+3.Check the power supply.
+
+4.Replace the phase sequence replay.
+
+Display『01』：
+
+Air compressor thermal relay alarm, overloaded air compressor or blower. Service required.
+
+1.Power supply fault.
+
+2.Overloaded air compressor.
+
+3.Overloaded blower.
+
+1.Check if any phase is missing.
+
+2.Check the refrigeration system.
+
+3. Remove objects that block the blower.
+
+Display『02』：
+
+High pressure alarm. Ambient temperature too high or poor ventilation. Please clean the filter mat the remove dirt on blower surface.
+
+1.Ambient temperature too high.
+
+2.Clogged filter mat.
+
+3. Overloading and water temperature too high.
+
+4.Blower fault.
+
+1.Improve ventilation to reduce ambient temperature.
+
+2.Clean filter mat and remove dirt on the blower surface.
+
+3.Lower water temperature and operation load.
+
+4.Check blower wiring or replace blower.
+
+Display『03』：
+
+Low temperature alarm. Low on refrigerant or ambient temperature too low. Service required.
+
+1.Clogged water circuit leads to poor circulation.
+
+2.Water temperature too low.
+
+3.Ambient temperature too low.
+
+4.Refrigerant leakage.
+
+5.Improperly adjusted pressure regulator.
+
+1.Check if the water circuit is clogged.
+
+2.Improve the preset water temperature appropriately.
+
+3.Ensure that the ambient temperature is above 5℃.
+
+4.Check leakage points and refill refrigerant.
+
+5.Adjust pressure regulator.
+
+Display『04』：
+
+Water level alarm. Water level too low. Check required.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Medium in tank is too less.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Add medium into the tank.</p>
+<p class="tableblock">Display『05』：</p>
+<p class="tableblock">Clogged water circuit. Water level alarm. Water level too low or clogged circuit. Service required.</p>
+<p class="tableblock">1.Medium in the system internal circulation is too less.</p>
+<p class="tableblock">2.System internal circuit is clogged.</p>
+<p class="tableblock">1.Add medium.</p>
+<p class="tableblock">2.Check if the circuit is clogged.</p>
+<p class="tableblock">Display『06』：</p>
+<p class="tableblock">Heating high pressure alarm. Clogged water circuit or water temperature alarm. Service required.</p>
+<p class="tableblock">1.Circuit circulation flow too low.</p>
+<p class="tableblock">2.Clogged refrigeration system internal circuit.</p>
+<p class="tableblock">1.Add medium</p>
+<p class="tableblock">2.Check if the refrigeration system circuit is clogged.</p>
+<p class="tableblock">Display『07』：</p>
+<p class="tableblock">Ambient temperature too high. Ambient temperature is .℃, exceeding ℃.</p>
+<p class="tableblock">1.Ambient temperature too high.</p>
+<p class="tableblock">2.Ambient temperature probe is in wrong position.</p>
+<p class="tableblock">3.Damaged ambient temperature probe.</p>
+<p class="tableblock">1.Improve ventilation to reduce ambient temperature.</p>
+<p class="tableblock">2.Check position of the ambient temperature probe.</p>
+<p class="tableblock">3.Replace ambient temperature probe.</p>
+<p class="tableblock">Display『08』：</p>
+<p class="tableblock">Water temperature too high. Water temperature is .℃, exceeding ℃.</p>
+<p class="tableblock">1.Cooling capacity too low. Inappropriate model.</p>
+<p class="tableblock">2.Ambient temperature probe fault.</p>
+<p class="tableblock">3.Insufficient medium flow rate.</p>
+<p class="tableblock">4.Poor ventilation.</p>
+<p class="tableblock">5.Refrigerant leakage.</p>
+<p class="tableblock">1.Select a new model.</p>
+<p class="tableblock">2.Check temperature probe and wiring,</p>
+<p class="tableblock">3.Clean filter and circuit.</p>
+<p class="tableblock">4.Clean filter mat of the condenser.</p>
+<p class="tableblock">5.Check leakage points and refill refrigerant.</p>
+<p class="tableblock">Display『09』：</p>
+<p class="tableblock">Anti-freeze alarm. Ambient temperature too low. Clogged water circuit or preset temperature too low. Anti-freeze temperature is is .℃, preset temperature is ℃.</p>
+<p class="tableblock">1.Clogged circuit.</p>
+<p class="tableblock">2.System internal circulation medium is too less.</p>
+<p class="tableblock">3. Anti-freeze temperature is set too high.</p>
+<p class="tableblock">4.Pump is not fully bled.</p>
+<p class="tableblock">1.Check if the circuit is clogged.</p>
+<p class="tableblock">2.Add medium</p>
+<p class="tableblock">3.Set the anti-freeze alarm temperature lower.</p>
+<p class="tableblock">4.Loosen the bleeding screw with a wrench to exhaust the air inside pump.</p>
+<p class="tableblock">Display『10』：</p>
+<p class="tableblock">Pump thermal relay alarm. Overloaded pump.</p>
+<p class="tableblock">1.Clogged circuit.</p>
+<p class="tableblock">2.Water too less in tank.</p>
+<p class="tableblock">3.Abnormal power supply voltage or missing phase.</p>
+<p class="tableblock">4.Damaged hydraulic pump.</p>
+<p class="tableblock">1.Improve ventilation to reduce heat.</p>
+<p class="tableblock">2.Add medium to the required level in the tank.</p>
+<p class="tableblock">3.Check whether the voltage is within the tolerance range of 10%.</p>
+<p class="tableblock">4.Replace hydraulic pump.</p>
+<p class="tableblock">Display『11』：</p>
+<p class="tableblock">Probe fault.  fault.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Temperature probe fault.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Check related temperature probe and wiring.</p>
+<p class="tableblock">Display『12』：</p>
+<p class="tableblock">High conductivity alarm.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Poor water quality.</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Replace with purified water.</p>
+<p class="tableblock">Display『13』：</p>
+<p class="tableblock">High voltage fault or air compressor thermal relay alarm.</p>
+<p class="tableblock">1.Power supply fault.</p>
+<p class="tableblock">2.Overloaded air compressor.</p>
+<p class="tableblock">3.Ambient temperature too high.</p>
+<p class="tableblock">4.Clogged filter mat.</p>
+<p class="tableblock">5.Overload and water temperature too high.</p>
+<p class="tableblock">6.Blower fault.</p>
+<p class="tableblock">1.Check if any phase is missing.</p>
+<p class="tableblock">2.Check the refrigeration system.</p>
+<p class="tableblock">3.Improve ventilation to lower ambient temperature.</p>
+<p class="tableblock">4.Clean filter mat and dirt on blower surface.</p>
+<p class="tableblock">5.Lower the water temperature and operation load.</p>
+<p class="tableblock">6.Check blower wiring or replace blow.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The control panel displays nothing after powering on the equipment.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1. Abnormal condition of power supply.</p>
+</div>
+<div class="paragraph">
+<p>2.Disconnected cable to the control panel.</p>
+</div>
+<div class="paragraph">
+<p>3.Damaged power supply transformer.</p>
+</div>
+<div class="paragraph">
+<p>1.Check power supply.</p>
+</div>
+<div class="paragraph">
+<p>2.Reconnect the cable.</p>
+</div>
+<div class="paragraph">
+<p>3.Replace transformer.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">The control panel indicates normal operation but the equipment is not running.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.Fuse of control circuit is blown.</p>
+</div>
+<div class="paragraph">
+<p>2.Lower power supply voltage.</p>
+</div>
+<div class="paragraph">
+<p>3.Damaged power supply transformer.</p>
+</div>
+<div class="paragraph">
+<p>1.Replace with the spare fuse.</p>
+</div>
+<div class="paragraph">
+<p>2.Specified voltage±10%</p>
+</div>
+<div class="paragraph">
+<p>3.Replace the transformer.</p>
+</div>
+<div class="paragraph">
+<p>Abnormal operation of the pump.</p>
+</div>
+<div class="paragraph">
+<p>Insufficient pump flow.</p>
+</div>
+<div class="paragraph">
+<p>Noise from pump.</p>
+</div>
+<div class="paragraph">
+<p>Air in the system.</p>
+</div>
+<div class="paragraph">
+<p>1.Return line connection is loosened.</p>
+</div>
+<div class="paragraph">
+<p>2.Clogged circuit or filter.</p>
+</div>
+<div class="paragraph">
+<p>3.Hoses are too narrow or too long. Pressure loss too high.</p>
+</div>
+<div class="paragraph">
+<p>4.Water viscosity too high or water temperature too low.</p>
+</div>
+<div class="paragraph">
+<p>1.Check return line and tighten the loosened connection.</p>
+</div>
+<div class="paragraph">
+<p>2.Clean the circuit or filter.</p>
+</div>
+<div class="paragraph">
+<p>3.Increase hose diameter and reduce hose length.</p>
+</div>
+<div class="paragraph">
+<p>4.Replace the water and increase the water temperature.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Loud noise.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.Water temperature too low.</p>
+</div>
+<div class="paragraph">
+<p>2.Improperly adjusted hydraulic pump.</p>
+</div>
+<div class="paragraph">
+<p>3.Clogged circuit.</p>
+</div>
+<div class="paragraph">
+<p>4.Deformed blower blades.</p>
+</div>
+<div class="paragraph">
+<p>5.Loosened screw on cover panel.</p>
+</div>
+<div class="paragraph">
+<p>6.Resonated circuit etc.</p>
+</div>
+<div class="paragraph">
+<p>1.Increase the preset temperature appropriately.</p>
+</div>
+<div class="paragraph">
+<p>2.Tune the adjustment screw of the hydraulic properly.</p>
+</div>
+<div class="paragraph">
+<p>3.Check circuit valve and filter.</p>
+</div>
+<div class="paragraph">
+<p>4.Replace blower.</p>
+</div>
+<div class="paragraph">
+<p>5.Tighten the screw.</p>
+</div>
+<div class="paragraph">
+<p>6.Find and fix the resonance point properly.</p>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Refrigeration compressor not working.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.Water temperature is set incorrect.</p>
+</div>
+<div class="paragraph">
+<p>2.Control fuse blows.</p>
+</div>
+<div class="paragraph">
+<p>3.Damaged contactor.</p>
+</div>
+<div class="paragraph">
+<p>4.Damaged control transformer.</p>
+</div>
+<div class="paragraph">
+<p>1.Re-set water temperature.</p>
+</div>
+<div class="paragraph">
+<p>2.Replace the fuse.</p>
+</div>
+<div class="paragraph">
+<p>3.Replace the contactor.</p>
+</div>
+<div class="paragraph">
+<p>4.Replace the control transformer.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Undesirable cooling effect</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.Ambient temperature too high.</p>
+</div>
+<div class="paragraph">
+<p>2.Clogged filter mat.</p>
+</div>
+<div class="paragraph">
+<p>3.Water level too low.</p>
+</div>
+<div class="paragraph">
+<p>4.Insufficient flow.</p>
+</div>
+<div class="paragraph">
+<p>5.Refrigerant leakage.</p>
+</div>
+<div class="paragraph">
+<p>1.Improve the ventilation to reduce heat.</p>
+</div>
+<div class="paragraph">
+<p>2.Clean the filter mat and blower.</p>
+</div>
+<div class="paragraph">
+<p>3.Add medium</p>
+</div>
+<div class="paragraph">
+<p>4.Check if the circuit is clogged. Clean the filter.</p>
+</div>
+<div class="paragraph">
+<p>5.Refill refrigerant.</p>
+</div></div></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Low temperature alarm of high-temperature water. Display of water temperature keeps flashing. No alarm output.</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="paragraph">
+<p>1.Ambient temperature too low. After the process cooler is switched off, preheating is required before restart.</p>
+</div>
+<div class="paragraph">
+<p>2.Water supply problem.</p>
+</div>
+<div class="paragraph">
+<p>1.Warning the user that there is risk of condensation at the ambient temperature with high humidity.</p>
+</div>
+<div class="paragraph">
+<p>2.Contact manufacturer for service.</p>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
